@@ -36,14 +36,14 @@
 
 ## Production `backend/requirements.txt` (minimal, import-audited)
 
-`fastapi>=0.115,<1.0`, `uvicorn[standard]>=0.34,<1.0`, `pydantic>=2.10,<3.0`, `numpy>=2.0,<3.0`, `scipy>=1.14,<2.0`, `rasterio>=1.4,<2.0`, `reportlab>=4.0,<6.0`, `certifi>=2024.8,<2027.0`.
+`fastapi>=0.115,<1.0`, `pydantic>=2.10,<3.0`, `numpy>=2.0,<3.0`, `scipy>=1.14,<2.0`, `rasterio>=1.4,<2.0`, `reportlab>=4.0,<6.0`, `certifi>=2024.8,<2027.0`.
 
-Excluded because unused at runtime (measured by import-graph audit): `pandas` (~72 MB), `geopandas`, `pyogrio` (~75 MB), `xarray`, `botocore` (~27 MB), `earthaccess`, `pytest` (moved to `requirements-dev.txt` with `httpx`), and **`httpx2`** — the suspicious pin is a real package (Tom Christie's "next generation HTTP client", now under Pydantic stewardship, 2.16.0) — it is simply never imported anywhere in backend or science runtime code; it contributed nothing but weight.
+Excluded because unused at runtime (measured by import-graph audit): `pandas` (~72 MB), `geopandas`, `pyogrio` (~75 MB), `xarray`, `botocore` (~27 MB), `earthaccess`, `uvicorn[standard]` (~10 MB — Fluid compute serves ASGI; it moves to `requirements-dev.txt` together with `pytest` and `httpx` for local runs), `pytest`, and **`httpx2`** — the suspicious pin is a real package (Tom Christie's "next generation HTTP client", now under Pydantic stewardship, 2.16.0) — it is simply never imported anywhere in backend or science runtime code; it contributed nothing but weight.
 
-## Moved files (integrity-verified, 39/39 data files byte-identical pre/post `mv`)
+## Moved files (integrity-verified, 33/33 data files byte-identical pre/post `mv`; n36w117 RAW/PROCESSED + LOLA central window moved OUT of the service root to the repo `data/` to honor the 500 MB function limit)
 
-- `data/` → `backend/data/` (incl. all raw + processed rasters and JSON metadata; hashes in `data/metadata/*.json` records + `/tmp/p1_data_hashes_*.txt` snapshot)
-- `science/` → `backend/science/` (runtime closure: `similarity`, `scoring`, `comparison`, `features`, `preprocessing/coordinate_systems.py`, `metadata`, `datasets`)
+- `data/` → `backend/data/` then rebalanced: `USGS_1_n36w117.{tif,xml}` (raw, 52 MB) and `USGS_1_n36w117_20m_utm11n.tif` (processed, 84 MB) and `moon_lola_central_20km_window.tif` (4 MB) moved to the repo-root `data/` so the service root stays small; runtime-served files remain in `backend/data/` (LOLA 14.9 MB + Jezero 7.9 MB + Death Valley n37w117 78 MB + metadata JSON ~0.7 MB); hashes for moved files were re-verified
+- `science/` → `backend/science/` (runtime closure intact)
 
 ## Code changes (path rebasing + deployment hardening, no science changes)
 
@@ -56,7 +56,7 @@ Frontend: `lib/api.ts` exports `apiUrl` = `NEXT_PUBLIC_API_URL` when set, else `
 
 - Moved rasters are byte-identical (SHA-256 before/after): 39/39.
 - Production venv (fresh, `requirements.txt` only): **269 MB** installed, installs in ~4 s, imports cleanly (`app.main`, `science.similarity.features.feature_extraction`, `science.similarity.scoring.similarity`), rasterio 1.5.2, numpy 2.5.5, scipy 1.18.1, reportlab 5.1.0, FastAPI 0.163.1.
-- **Actual estimated backend bundle** = 269 MB (venv, incl. local-dev uvicorn stack) + ~99.9 MB (required processed rasters after exclusions) + ~1.5 MB (app + science code) ≈ **370 MB** — comfortably under the standard 500 MB Python limit; Large Functions NOT required.
+- **Actual estimated backend bundle** = 245 MB (fresh minimal venv minus pip) + ~101 MB (required processed rasters in `backend/data/` + JSON) + ~2.5 MB (app + science code) ≈ **350 MB or less** — comfortably under the standard 500 MB Python limit; Large Functions NOT required. Before this fix the bundle was ~640 MB (measured failure: LAMBDA_SIZE_EXCEEDED against 500 MB).
 - Backend tests: **32/32 pass**. Science tests: **134/134 pass**. `pytest` not in production requirements.
 - Frontend: `next build` ✓; MAP loads 13 markers with `BACKEND ONLINE`; 0 console errors; TSC 0.
 - Endpoint suite (all HTTP 200 except intentional negative cases):
@@ -91,5 +91,6 @@ Before deploying, **commit & push** the changes (not done — per instructions).
 Local dev (unchanged):
 ```bash
 cd frontend && npm run dev          # :3000, API defaults to localhost:8000 (dev fallback)
+pip install -r requirements-dev.txt
 cd backend  && PYTHONPATH=. .venv/bin/python -m uvicorn app.main:app --reload --port 8000
 ```

@@ -42,7 +42,7 @@ MARS_PATH = Path(
     "data/processed/mars_jezero_ctx_elevation_m.tif"
 )
 EARTH_36_PATH = Path(
-    "/Users/markadam/Desktop/NASA SPACE APP CHALLENGE/nasaspaceapp/backend/"
+    "/Users/markadam/Desktop/NASA SPACE APP CHALLENGE/nasaspaceapp/"
     "data/processed/USGS_1_n36w117_20m_utm11n.tif"
 )
 
