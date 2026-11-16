@@ -1,0 +1,78 @@
+{
+  "tmsi": 49.92285382858792,
+  "ci_lower": 42.687759540199565,
+  "ci_upper": 56.919271600406816,
+  "tmsi_mean": 49.967028123434574,
+  "seed_sensitivity": {
+    "mean_tmsi_across_seeds": 49.68179908550492,
+    "min_tmsi_across_seeds": 49.53611056705094,
+    "max_tmsi_across_seeds": 49.967028123434574,
+    "max_abs_tmsi_diff_across_seeds": 0.4309175563836334,
+    "mean_lower_bound_across_seeds": 42.18702579267758,
+    "mean_upper_bound_across_seeds": 56.88872895042404,
+    "min_lower_bound_across_seeds": 41.72847265688221,
+    "max_upper_bound_across_seeds": 57.22325245585705,
+    "max_abs_lower_diff_across_seeds": 0.959286883317354,
+    "max_abs_upper_diff_across_seeds": 0.6681735489596932
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "tmsi_mean": 49.967028123434574,
+      "tmsi_median": 50.21758133827983,
+      "tmsi_lower_95": 42.687759540199565,
+      "tmsi_upper_95": 56.919271600406816,
+      "repetitions": 1000,
+      "block_size_m": 320.0
+    },
+    {
+      "seed": 123,
+      "tmsi_mean": 49.57609427467383,
+      "tmsi_median": 49.584138208685125,
+      "tmsi_lower_95": 41.74024962483811,
+      "tmsi_upper_95": 57.17501098666594,
+      "repetitions": 1000,
+      "block_size_m": 320.0
+    },
+    {
+      "seed": 456,
+      "tmsi_mean": 49.65868967097806,
+      "tmsi_median": 49.62772415114181,
+      "tmsi_lower_95": 42.45016699781031,
+      "tmsi_upper_95": 57.22325245585705,
+      "repetitions": 1000,
+      "block_size_m": 320.0
+    },
+    {
+      "seed": 789,
+      "tmsi_mean": 49.67107279138716,
+      "tmsi_median": 49.73186993876307,
+      "tmsi_lower_95": 41.72847265688221,
+      "tmsi_upper_95": 56.55507890689736,
+      "repetitions": 1000,
+      "block_size_m": 320.0
+    },
+    {
+      "seed": 1011,
+      "tmsi_mean": 49.53611056705094,
+      "tmsi_median": 49.61636357286917,
+      "tmsi_lower_95": 42.328480143657714,
+      "tmsi_upper_95": 56.571030802293016,
+      "repetitions": 1000,
+      "block_size_m": 320.0
+    }
+  ],
+  "limitations": [
+    "TMSI is a terrain-morphology index, not a probability, habitability score, or safety certification.",
+    "Features are interpreted at a common physical scale of 20 m; no raster upsampling was performed.",
+    "Earth and planetary environmental conditions remain physically different even when morphology distributions are similar."
+  ],
+  "strongest_matches": [
+    "slope",
+    "local_relief"
+  ],
+  "largest_differences": [
+    "terrain_ruggedness",
+    "local_relief"
+  ]
+}

@@ -1,0 +1,356 @@
+{
+  "comparison_type": "earth_mars",
+  "target": {
+    "id": "mars_jezero_ctx_dtm",
+    "body": "Mars"
+  },
+  "candidate": {
+    "id": "usgs_3dep_n36w117",
+    "body": "Earth"
+  },
+  "result": {
+    "target": {
+      "id": "mars_jezero_ctx_dtm",
+      "body": "Mars",
+      "resolution_m": [
+        20.0,
+        20.0
+      ]
+    },
+    "candidate": {
+      "id": "usgs_3dep_n36w117",
+      "body": "Earth",
+      "resolution_m": [
+        20.0,
+        20.0
+      ]
+    },
+    "similarity_index": 73.13598243498389,
+    "confidence": "HIGH",
+    "combined_distance": 0.31284970456795214,
+    "weights": {
+      "local_relief": 1.0,
+      "slope": 1.0,
+      "terrain_ruggedness": 1.0
+    },
+    "features": {
+      "local_relief": {
+        "units": "m",
+        "target_summary": {
+          "count": 2406940,
+          "mean": 4.5095906257629395,
+          "median": 3.00830078125,
+          "std": 4.254823684692383,
+          "q25": 1.5703125,
+          "q75": 5.970947265625,
+          "q90": 10.356335639953613
+        },
+        "candidate_summary": {
+          "count": 25295502,
+          "mean": 7.265923976898193,
+          "median": 3.45220947265625,
+          "std": 8.446866035461426,
+          "q25": 1.66461181640625,
+          "q75": 10.30963134765625,
+          "q90": 19.72113037109375
+        },
+        "distance": {
+          "wasserstein": 2.801672895416319,
+          "ks_statistic": 0.14971,
+          "ks_pvalue": 0.0,
+          "pooled_iqr": 8.66009521484375,
+          "normalized_distance": 0.32351525311339985,
+          "sample_count_target": 100000,
+          "sample_count_candidate": 100000
+        },
+        "neighborhood_m": 60.0,
+        "definition": "maximum elevation minus minimum elevation in a complete square window"
+      },
+      "slope": {
+        "units": "degrees",
+        "target_summary": {
+          "count": 2406940,
+          "mean": 4.998754501342773,
+          "median": 3.366520881652832,
+          "std": 4.6682634353637695,
+          "q25": 1.7265371084213257,
+          "q75": 6.702472686767578,
+          "q90": 11.593896865844727
+        },
+        "candidate_summary": {
+          "count": 25295502,
+          "mean": 7.729578018188477,
+          "median": 3.784126043319702,
+          "std": 8.611719131469727,
+          "q25": 1.8705778121948242,
+          "q75": 11.180971145629883,
+          "q90": 21.242406845092773
+        },
+        "distance": {
+          "wasserstein": 2.7607504402141774,
+          "ks_statistic": 0.14288999999999996,
+          "ks_pvalue": 0.0,
+          "pooled_iqr": 9.343263566493988,
+          "normalized_distance": 0.29548031269443625,
+          "sample_count_target": 100000,
+          "sample_count_candidate": 100000
+        },
+        "neighborhood_m": null,
+        "definition": "atan of the metre-per-pixel gradient magnitude"
+      },
+      "terrain_ruggedness": {
+        "units": "m",
+        "target_summary": {
+          "count": 2406940,
+          "mean": 1.5624487400054932,
+          "median": 1.0494916439056396,
+          "std": 1.4546080827713013,
+          "q25": 0.5565876960754395,
+          "q75": 2.0616164207458496,
+          "q90": 3.576375722885132
+        },
+        "candidate_summary": {
+          "count": 25295502,
+          "mean": 2.535766124725342,
+          "median": 1.1960968971252441,
+          "std": 2.908280611038208,
+          "q25": 0.5826222896575928,
+          "q75": 3.6727633476257324,
+          "q90": 6.881107330322266
+        },
+        "distance": {
+          "wasserstein": 0.9933136389116817,
+          "ks_statistic": 0.15675000000000006,
+          "ks_pvalue": 0.0,
+          "pooled_iqr": 3.1084419041872025,
+          "normalized_distance": 0.31955354789602025,
+          "sample_count_target": 100000,
+          "sample_count_candidate": 100000
+        },
+        "neighborhood_m": 60.0,
+        "definition": "Riley TRI: sqrt(mean squared center-to-neighbor elevation differences))"
+      }
+    },
+    "strongest_matches": [
+      "slope",
+      "terrain_ruggedness"
+    ],
+    "largest_differences": [
+      "local_relief",
+      "terrain_ruggedness"
+    ],
+    "limitations": [
+      "TMSI is a terrain-morphology index, not a probability, habitability score, or safety certification.",
+      "Features are interpreted at a common physical scale of 20 m; no raster upsampling was performed.",
+      "Earth and planetary environmental conditions remain physically different even when morphology distributions are similar."
+    ],
+    "data_sources": [
+      {
+        "path": "/Users/markadam/Desktop/NASA SPACE APP CHALLENGE/nasaspaceapp/data/processed/mars_jezero_ctx_elevation_m.tif",
+        "width": 1596,
+        "height": 1512,
+        "bounds": [
+          4573663.250853,
+          1079453.140188,
+          4605583.250853,
+          1109693.140188
+        ],
+        "crs_wkt": "PROJCS[\"Equirectangular Mars 2000 Sphere IAU\",GEOGCS[\"GCS_Mars_2000_Sphere\",DATUM[\"Mars_2000_(Sphere)\",SPHEROID[\"Mars_2000_Sphere_IAU\",3396190,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "longitude_convention": "Planetocentric longitude; source longitude domain is preserved",
+        "nodata": NaN,
+        "resolution_m": [
+          20.0,
+          20.0
+        ],
+        "effective_resolution_m": null,
+        "source_valid_percent": 100.0,
+        "feature_windows_cells": {
+          "local_relief": 3,
+          "terrain_ruggedness": 3
+        },
+        "feature_summaries": {
+          "slope": {
+            "count": 2406940,
+            "mean": 4.998754501342773,
+            "median": 3.366520881652832,
+            "std": 4.6682634353637695,
+            "q25": 1.7265371084213257,
+            "q75": 6.702472686767578,
+            "q90": 11.593896865844727
+          },
+          "local_relief": {
+            "count": 2406940,
+            "mean": 4.5095906257629395,
+            "median": 3.00830078125,
+            "std": 4.254823684692383,
+            "q25": 1.5703125,
+            "q75": 5.970947265625,
+            "q90": 10.356335639953613
+          },
+          "terrain_ruggedness": {
+            "count": 2406940,
+            "mean": 1.5624487400054932,
+            "median": 1.0494916439056396,
+            "std": 1.4546080827713013,
+            "q25": 0.5565876960754395,
+            "q75": 2.0616164207458496,
+            "q90": 3.576375722885132
+          }
+        }
+      },
+      {
+        "path": "/Users/markadam/Desktop/NASA SPACE APP CHALLENGE/nasaspaceapp/data/processed/USGS_1_n36w117_20m_utm11n.tif",
+        "width": 4579,
+        "height": 5588,
+        "bounds": [
+          499847.91082418186,
+          3872837.1970382947,
+          591427.9108241819,
+          3984597.1970382947
+        ],
+        "crs_wkt": "PROJCS[\"NAD83 / UTM zone 11N\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-117],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"26911\"]]",
+        "longitude_convention": "Planetocentric longitude; source longitude domain is preserved",
+        "nodata": -999999.0,
+        "resolution_m": [
+          20.0,
+          20.0
+        ],
+        "effective_resolution_m": null,
+        "source_valid_percent": 98.93844842386027,
+        "feature_windows_cells": {
+          "local_relief": 3,
+          "terrain_ruggedness": 3
+        },
+        "feature_summaries": {
+          "slope": {
+            "count": 25295502,
+            "mean": 7.729578018188477,
+            "median": 3.784126043319702,
+            "std": 8.611719131469727,
+            "q25": 1.8705778121948242,
+            "q75": 11.180971145629883,
+            "q90": 21.242406845092773
+          },
+          "local_relief": {
+            "count": 25295502,
+            "mean": 7.265923976898193,
+            "median": 3.45220947265625,
+            "std": 8.446866035461426,
+            "q25": 1.66461181640625,
+            "q75": 10.30963134765625,
+            "q90": 19.72113037109375
+          },
+          "terrain_ruggedness": {
+            "count": 25295502,
+            "mean": 2.535766124725342,
+            "median": 1.1960968971252441,
+            "std": 2.908280611038208,
+            "q25": 0.5826222896575928,
+            "q75": 3.6727633476257324,
+            "q90": 6.881107330322266
+          }
+        }
+      }
+    ],
+    "statistical_uncertainty": {
+      "method": "non-overlapping spatial block bootstrap with replacement",
+      "block_size_m": 320.0,
+      "target_block_size_cells": 16,
+      "candidate_block_size_cells": 16,
+      "repetitions": 64,
+      "seed": 42,
+      "tmsi_mean": 71.81799051244778,
+      "tmsi_median": 72.09983698733818,
+      "tmsi_lower_95": 65.41457989620608,
+      "tmsi_upper_95": 78.40166315460154,
+      "feature_distance_means": {
+        "local_relief": 0.33216313335840025,
+        "slope": 0.3203646444991106,
+        "terrain_ruggedness": 0.3439618796727575
+      },
+      "interpretation": "Intervals quantify spatial sampling variability under this block-size assumption; they are not calibrated probabilities or measurement error bars."
+    },
+    "block_size_sensitivity": {
+      "block_sizes_m": [
+        160,
+        320,
+        640
+      ],
+      "results": {
+        "160": {
+          "method": "non-overlapping spatial block bootstrap with replacement",
+          "block_size_m": 160.0,
+          "target_block_size_cells": 8,
+          "candidate_block_size_cells": 8,
+          "repetitions": 32,
+          "seed": 42,
+          "tmsi_mean": 71.27063960726764,
+          "tmsi_median": 71.45627383501443,
+          "tmsi_lower_95": 63.58835615507361,
+          "tmsi_upper_95": 77.73820610946723,
+          "feature_distance_means": {
+            "local_relief": 0.3579137824570362,
+            "slope": 0.3283234641926124,
+            "terrain_ruggedness": 0.33408563981401096
+          },
+          "interpretation": "Intervals quantify spatial sampling variability under this block-size assumption; they are not calibrated probabilities or measurement error bars."
+        },
+        "320": {
+          "method": "non-overlapping spatial block bootstrap with replacement",
+          "block_size_m": 320.0,
+          "target_block_size_cells": 16,
+          "candidate_block_size_cells": 16,
+          "repetitions": 32,
+          "seed": 42,
+          "tmsi_mean": 71.27471095579673,
+          "tmsi_median": 71.14516042380083,
+          "tmsi_lower_95": 65.45287962136234,
+          "tmsi_upper_95": 78.02629199369076,
+          "feature_distance_means": {
+            "local_relief": 0.34687043034875303,
+            "slope": 0.3308121494436096,
+            "terrain_ruggedness": 0.34197812202140704
+          },
+          "interpretation": "Intervals quantify spatial sampling variability under this block-size assumption; they are not calibrated probabilities or measurement error bars."
+        },
+        "640": {
+          "method": "non-overlapping spatial block bootstrap with replacement",
+          "block_size_m": 640.0,
+          "target_block_size_cells": 32,
+          "candidate_block_size_cells": 32,
+          "repetitions": 32,
+          "seed": 42,
+          "tmsi_mean": 72.27633031112629,
+          "tmsi_median": 71.7527444037629,
+          "tmsi_lower_95": 67.3352949633086,
+          "tmsi_upper_95": 79.70104625504595,
+          "feature_distance_means": {
+            "local_relief": 0.3261529200567303,
+            "slope": 0.31727096543616956,
+            "terrain_ruggedness": 0.3330389174448454
+          },
+          "interpretation": "Intervals quantify spatial sampling variability under this block-size assumption; they are not calibrated probabilities or measurement error bars."
+        }
+      }
+    },
+    "comparison_diagnostics": {
+      "extent": {
+        "extent_km": 10.24,
+        "reference_extent_km": null,
+        "extent_delta_km": null,
+        "extent_ratio": null,
+        "sensitivity_flag": false,
+        "reason": "Extent 10.24 km recorded; no reference extent for comparison."
+      }
+    }
+  },
+  "metadata": {
+    "common_analysis_scale_m": 20.0,
+    "spatial_extent_km": 10.24,
+    "earth_source": "USGS 3DEP 1-arc-second (n36w117), resampled to 20 m",
+    "earth_effective_resolution_m": "~29.3 m (native); 20 m (resampled)",
+    "earth_vertical_datum": "NAVD88",
+    "mars_vertical_datum": "Delta geoid (MOLA control)",
+    "reproducible": true
+  }
+}

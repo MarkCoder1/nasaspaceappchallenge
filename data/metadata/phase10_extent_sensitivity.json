@@ -1,0 +1,134 @@
+{
+  "experiment": "phase10_spatial_extent_sensitivity",
+  "cell_m": 20.0,
+  "weights": {
+    "slope": 1.0,
+    "local_relief": 1.0,
+    "terrain_ruggedness": 1.0
+  },
+  "note": "Centered square windows extracted from both Mars and Moon at equal physical extent. Extents exceeding a dataset's coverage are skipped for that dataset; the largest common square extent is used where proposed extents do not fit.",
+  "extents": [
+    {
+      "extent_km": 5.12,
+      "n_cells": 256,
+      "mars_available": true,
+      "moon_available": true,
+      "comparable": true,
+      "mars_window_cells": [
+        670,
+        628,
+        256,
+        256
+      ],
+      "moon_window_cells": [
+        896,
+        896,
+        256,
+        256
+      ],
+      "tmsi": 23.709929505974134,
+      "confidence": "HIGH",
+      "combined_distance": 1.4392762590921633,
+      "feature_distances": {
+        "local_relief": 1.3978941255824187,
+        "slope": 1.5103783080044273,
+        "terrain_ruggedness": 1.4095563436896439
+      },
+      "bootstrap_mean": 22.811487107571473,
+      "bootstrap_lower_95": 14.081715690397935,
+      "bootstrap_upper_95": 31.830604841040287,
+      "mars_valid_percent": 100.0,
+      "moon_valid_percent": 100.0
+    },
+    {
+      "extent_km": 10.24,
+      "n_cells": 512,
+      "mars_available": true,
+      "moon_available": true,
+      "comparable": true,
+      "mars_window_cells": [
+        542,
+        500,
+        512,
+        512
+      ],
+      "moon_window_cells": [
+        768,
+        768,
+        512,
+        512
+      ],
+      "tmsi": 27.72060320060695,
+      "confidence": "HIGH",
+      "combined_distance": 1.2829942514194888,
+      "feature_distances": {
+        "local_relief": 1.289591517450639,
+        "slope": 1.337698383351758,
+        "terrain_ruggedness": 1.2216928534560694
+      },
+      "bootstrap_mean": 25.3366042358157,
+      "bootstrap_lower_95": 18.81164045241457,
+      "bootstrap_upper_95": 32.837181209164136,
+      "mars_valid_percent": 100.0,
+      "moon_valid_percent": 100.0
+    },
+    {
+      "extent_km": 20.48,
+      "n_cells": 1024,
+      "mars_available": true,
+      "moon_available": true,
+      "comparable": true,
+      "mars_window_cells": [
+        286,
+        244,
+        1024,
+        1024
+      ],
+      "moon_window_cells": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "tmsi": 46.404052087414485,
+      "confidence": "HIGH",
+      "combined_distance": 0.7677834010987383,
+      "feature_distances": {
+        "local_relief": 0.7696357192185318,
+        "slope": 0.7733839878512028,
+        "terrain_ruggedness": 0.7603304962264805
+      },
+      "bootstrap_mean": 43.75183980333033,
+      "bootstrap_lower_95": 36.66315618352787,
+      "bootstrap_upper_95": 50.254382644211205,
+      "mars_valid_percent": 100.0,
+      "moon_valid_percent": 100.0
+    },
+    {
+      "extent_km": 30.72,
+      "n_cells": 1536,
+      "mars_available": false,
+      "moon_available": true,
+      "comparable": false,
+      "skip_reason": "Extent 30.72 km (1536 cells) exceeds one or both dataset coverages (Mars 1596x1512, Moon 2048x2048)."
+    },
+    {
+      "extent_km": 40.96,
+      "n_cells": 2048,
+      "mars_available": false,
+      "moon_available": true,
+      "comparable": false,
+      "skip_reason": "Extent 40.96 km (2048 cells) exceeds one or both dataset coverages (Mars 1596x1512, Moon 2048x2048)."
+    }
+  ],
+  "reference_full_datasets": {
+    "mars_extent_km": 31.92,
+    "moon_extent_km": 40.96,
+    "tmsi": 49.92285382858792,
+    "confidence": "HIGH",
+    "combined_distance": 0.694691295520326,
+    "bootstrap_mean": 49.73796848740175,
+    "bootstrap_lower_95": 42.65988735789199,
+    "bootstrap_upper_95": 56.61495993646561
+  }
+}

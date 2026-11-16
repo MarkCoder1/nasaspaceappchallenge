@@ -1,0 +1,28 @@
+{
+  "dataset": "earth_nasadem_hgt_v001",
+  "state": "PENDING",
+  "name": "NASADEM Merged DEM Global 1 arc second V001",
+  "planet": "Earth",
+  "institution": "NASA LP DAAC / NASA JPL",
+  "official_url": "https://www.earthdata.nasa.gov/data/catalog/lpcloud-nasadem-hgt-001",
+  "doi": "10.5067/MEASURES/NASADEM/NASADEM_HGT.001",
+  "roi": "Atacama working region near 23.0 S, 67.75 W",
+  "required_tiles": [
+    "NASADEM_HGT_s23w067",
+    "NASADEM_HGT_s23w068",
+    "NASADEM_HGT_s24w068",
+    "NASADEM_HGT_s24w069"
+  ],
+  "cmr_collection": "C2763264762-LPCLOUD",
+  "cmr_query": "https://cmr.earthdata.nasa.gov/search/granules.json?collection_concept_id=C2763264762-LPCLOUD&bounding_box=-68,-24,-67,-23&page_size=10",
+  "access_status": "BLOCKED_BY_EARTHDATA_AUTHENTICATION",
+  "access_attempt": "The official lp-prod-protected granule redirects to NASA Earthdata OAuth and returns HTTP 401 without user credentials.",
+  "source_units": "meters with NASADEM EGM96 vertical reference",
+  "nominal_resolution": "1 arc-second, approximately 30 m; latitude-dependent ground spacing",
+  "processing_status": "No local file acquired; no Earth comparison enabled",
+  "limitations": [
+    "No credentials were supplied or stored.",
+    "No alternate DEM was substituted or mislabeled as NASADEM.",
+    "This manifest is provenance for an attempted acquisition, not an observation file."
+  ]
+}

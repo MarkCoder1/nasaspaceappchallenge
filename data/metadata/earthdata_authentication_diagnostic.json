@@ -1,0 +1,30 @@
+{
+  "source_id": "nasadem_hgt",
+  "source_name": "NASADEM HGT",
+  "attempt_timestamp": "nasaspaceapp",
+  "access_method": "NASA Earthdata; HTTP 401 without credentials; BLOCKED",
+  "reason": "NASA Earthdata authentication HTTP 401; no valid credentials in repository",
+  "blocking_condition": "NASADEM_HGT_V001",
+  "resolution": "30 m (1 arc-second)",
+  "vertical_datum": "EGM96",
+  "limitations": [
+    "HTTP 401 without valid Earthdata credentials",
+    "No alternate validated Earth DEM in repository",
+    "Does not cover polar Earth candidates"
+  ],
+  "state": "BLOCKED_BY_EARTHDATA_AUTHENTICATION",
+  "provenance": {
+    "source": "NASADEM HGT",
+    "provider": "NASA LP DAAC / NASA JPL",
+    "official_url": "https://www.earthdata.nasa.gov/data/catalog/lpcloud-nasadem-hgt-001",
+    "access_method": "NASA Earthdata; HTTP 401 without credentials; BLOCKED",
+    "state": "BLOCKED_BY_EARTHDATA_AUTHENTICATION",
+    "attempt_timestamp": "nasaspaceapp",
+    "note": "Acquisition not performed in this environment; pipeline ready for when data is available"
+  },
+  "warnings": [
+    "HTTP 401 without valid Earthdata credentials",
+    "No alternate validated Earth DEM in repository",
+    "Does not cover polar Earth candidates"
+  ]
+}

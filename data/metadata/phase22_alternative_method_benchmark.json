@@ -1,0 +1,116 @@
+{
+  "Moon-Mars": {
+    "slope": {
+      "tmsi_single": 50.38759096672298,
+      "cosine_similarity": 0.5948694944381714,
+      "euclidean_distance": 18059.001953125,
+      "euclidean_normalized": 389.9541015625,
+      "euclidean_similarity": -388.9541015625,
+      "pearson_correlation": 0.0031062189424410996,
+      "wasserstein": 8.776905943661378,
+      "ks_statistic": 0.48830999999999997,
+      "normalized_distance": 0.6854252522033859,
+      "tmsi_from_wasserstein": 50.38759096672298
+    },
+    "local_relief": {
+      "tmsi_single": 50.24460531119791,
+      "cosine_similarity": 0.5792176127433777,
+      "euclidean_distance": 17931.798828125,
+      "euclidean_normalized": 342.49346923828125,
+      "euclidean_similarity": -341.49346923828125,
+      "pearson_correlation": 0.003666712844225826,
+      "wasserstein": 8.539463622622488,
+      "ks_statistic": 0.49187000000000003,
+      "normalized_distance": 0.6882670018031668,
+      "tmsi_from_wasserstein": 50.24460531119791
+    },
+    "terrain_ruggedness": {
+      "tmsi_single": 49.14566058278336,
+      "cosine_similarity": 0.5885496735572815,
+      "euclidean_distance": 5894.13134765625,
+      "euclidean_normalized": 352.47479248046875,
+      "euclidean_similarity": -351.47479248046875,
+      "pearson_correlation": 0.0032775224776473598,
+      "wasserstein": 2.8755454840063672,
+      "ks_statistic": 0.49545000000000006,
+      "normalized_distance": 0.7103816325544253,
+      "tmsi_from_wasserstein": 49.14566058278336
+    }
+  },
+  "Earth-Moon": {
+    "slope": {
+      "tmsi_single": 61.89536691600224,
+      "cosine_similarity": 0.5721402764320374,
+      "euclidean_distance": 30328.642578125,
+      "euclidean_normalized": 414.4545593261719,
+      "euclidean_similarity": -413.4545593261719,
+      "pearson_correlation": -0.08372438276562158,
+      "wasserstein": 6.142901702316947,
+      "ks_statistic": 0.4128600000000001,
+      "normalized_distance": 0.47972485698243084,
+      "tmsi_from_wasserstein": 61.89536691600224
+    },
+    "local_relief": {
+      "tmsi_single": 62.204609467823516,
+      "cosine_similarity": 0.5419430732727051,
+      "euclidean_distance": 30563.8203125,
+      "euclidean_normalized": 200.32130432128906,
+      "euclidean_similarity": -199.32130432128906,
+      "pearson_correlation": -0.08519683460851597,
+      "wasserstein": 5.89020567233473,
+      "ks_statistic": 0.40634000000000003,
+      "normalized_distance": 0.4747410817890255,
+      "tmsi_from_wasserstein": 62.204609467823516
+    },
+    "terrain_ruggedness": {
+      "tmsi_single": 61.75133373793113,
+      "cosine_similarity": 0.5512168407440186,
+      "euclidean_distance": 10330.166015625,
+      "euclidean_normalized": 184.4171600341797,
+      "euclidean_similarity": -183.4171600341797,
+      "pearson_correlation": -0.08386624984689,
+      "wasserstein": 1.951303212594191,
+      "ks_statistic": 0.40895,
+      "normalized_distance": 0.48205461171842373,
+      "tmsi_from_wasserstein": 61.75133373793113
+    }
+  },
+  "Earth-Mars": {
+    "slope": {
+      "tmsi_single": 74.41740653611168,
+      "cosine_similarity": 0.5292826890945435,
+      "euclidean_distance": 20947.15234375,
+      "euclidean_normalized": 286.25225830078125,
+      "euclidean_similarity": -285.25225830078125,
+      "pearson_correlation": 0.0036601488669748845,
+      "wasserstein": 2.7607504402141774,
+      "ks_statistic": 0.14288999999999996,
+      "normalized_distance": 0.29548031269443625,
+      "tmsi_from_wasserstein": 74.41740653611168
+    },
+    "local_relief": {
+      "tmsi_single": 72.3600920671307,
+      "cosine_similarity": 0.5111677050590515,
+      "euclidean_distance": 21173.9453125,
+      "euclidean_normalized": 138.77821350097656,
+      "euclidean_similarity": -137.77821350097656,
+      "pearson_correlation": 0.004918253899783984,
+      "wasserstein": 2.801672895416319,
+      "ks_statistic": 0.14971,
+      "normalized_distance": 0.32351525311339985,
+      "tmsi_from_wasserstein": 72.3600920671307
+    },
+    "terrain_ruggedness": {
+      "tmsi_single": 72.64733002176908,
+      "cosine_similarity": 0.5179594159126282,
+      "euclidean_distance": 7271.00341796875,
+      "euclidean_normalized": 129.80409240722656,
+      "euclidean_similarity": -128.80409240722656,
+      "pearson_correlation": 0.004384934615464808,
+      "wasserstein": 0.9933136389116817,
+      "ks_statistic": 0.15675000000000006,
+      "normalized_distance": 0.31955354789602025,
+      "tmsi_from_wasserstein": 72.64733002176908
+    }
+  }
+}

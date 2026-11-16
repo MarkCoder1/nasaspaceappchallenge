@@ -1,0 +1,347 @@
+{
+  "comparison_type": "moon_mars",
+  "target": {
+    "id": "mars_jezero_ctx_dtm",
+    "body": "Mars",
+    "resolution_m": [
+      20.0,
+      20.0
+    ],
+    "crs": "ESRI:103885"
+  },
+  "candidate": {
+    "id": "moon_lola",
+    "body": "Moon",
+    "resolution_m": [
+      20.0,
+      20.0
+    ],
+    "crs": "PROJCS[\"Moon (2015) - Sphere / Ocentric / South Polar\",GEOGCS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",SPHEROID[\"Moon (2015) - Sphere\",1737400,0,AUTHORITY[\"IAU\",\"30100\"]],AUTHORITY[\"IAU\",\"30100\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"30100\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"30100\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"30135\"]]"
+  },
+  "result": {
+    "similarity_index": 49.92285382858792,
+    "confidence": "HIGH",
+    "combined_distance": 0.694691295520326,
+    "weights": {
+      "local_relief": 1.0,
+      "slope": 1.0,
+      "terrain_ruggedness": 1.0
+    },
+    "strongest_matches": [
+      "slope",
+      "local_relief"
+    ],
+    "largest_differences": [
+      "terrain_ruggedness",
+      "local_relief"
+    ],
+    "limitations": [
+      "TMSI is a terrain-morphology index, not a probability, habitability score, or safety certification.",
+      "Features are interpreted at a common physical scale of 20 m; no raster upsampling was performed.",
+      "Earth and planetary environmental conditions remain physically different even when morphology distributions are similar."
+    ],
+    "features": {
+      "local_relief": {
+        "units": "m",
+        "target_summary": {
+          "count": 2406940,
+          "mean": 4.5095906257629395,
+          "median": 3.00830078125,
+          "std": 4.254823684692383,
+          "q25": 1.5703125,
+          "q75": 5.970947265625,
+          "q90": 10.356335639953613
+        },
+        "candidate_summary": {
+          "count": 4186116,
+          "mean": 13.053810119628906,
+          "median": 10.524658203125,
+          "std": 9.190032958984375,
+          "q25": 5.81683349609375,
+          "q75": 18.20355224609375,
+          "q90": 28.4102783203125
+        },
+        "distance": {
+          "wasserstein": 8.539463622622488,
+          "ks_statistic": 0.49187000000000003,
+          "ks_pvalue": 0.0,
+          "pooled_iqr": 12.407196044921875,
+          "normalized_distance": 0.6882670018031668,
+          "sample_count_target": 100000,
+          "sample_count_candidate": 100000
+        },
+        "neighborhood_m": 60.0,
+        "definition": "maximum elevation minus minimum elevation in a complete square window"
+      },
+      "slope": {
+        "units": "degrees",
+        "target_summary": {
+          "count": 2406940,
+          "mean": 4.998754501342773,
+          "median": 3.366520881652832,
+          "std": 4.6682634353637695,
+          "q25": 1.7265371084213257,
+          "q75": 6.702472686767578,
+          "q90": 11.593896865844727
+        },
+        "candidate_summary": {
+          "count": 4186116,
+          "mean": 13.78176212310791,
+          "median": 11.599422454833984,
+          "std": 9.160831451416016,
+          "q25": 6.46319055557251,
+          "q75": 19.28386688232422,
+          "q90": 29.768028259277344
+        },
+        "distance": {
+          "wasserstein": 8.776905943661378,
+          "ks_statistic": 0.48830999999999997,
+          "ks_pvalue": 0.0,
+          "pooled_iqr": 12.805051922798157,
+          "normalized_distance": 0.6854252522033859,
+          "sample_count_target": 100000,
+          "sample_count_candidate": 100000
+        },
+        "neighborhood_m": null,
+        "definition": "atan of the metre-per-pixel gradient magnitude"
+      },
+      "terrain_ruggedness": {
+        "units": "m",
+        "target_summary": {
+          "count": 2406940,
+          "mean": 1.5624487400054932,
+          "median": 1.0494916439056396,
+          "std": 1.4546080827713013,
+          "q25": 0.5565876960754395,
+          "q75": 2.0616164207458496,
+          "q90": 3.576375722885132
+        },
+        "candidate_summary": {
+          "count": 4186116,
+          "mean": 4.439925670623779,
+          "median": 3.5977184772491455,
+          "std": 3.073314905166626,
+          "q25": 2.031604290008545,
+          "q75": 6.076421737670898,
+          "q90": 9.953781127929688
+        },
+        "distance": {
+          "wasserstein": 2.8755454840063672,
+          "ks_statistic": 0.49545000000000006,
+          "ks_pvalue": 0.0,
+          "pooled_iqr": 4.047888278961182,
+          "normalized_distance": 0.7103816325544253,
+          "sample_count_target": 100000,
+          "sample_count_candidate": 100000
+        },
+        "neighborhood_m": 60.0,
+        "definition": "Riley TRI: sqrt(mean squared center-to-neighbor elevation differences))"
+      }
+    },
+    "statistical_uncertainty": {
+      "method": "non-overlapping spatial block bootstrap with replacement",
+      "block_size_m": 320.0,
+      "target_block_size_cells": 16,
+      "candidate_block_size_cells": 16,
+      "repetitions": 64,
+      "seed": 42,
+      "tmsi_mean": 49.69509289955227,
+      "tmsi_median": 49.830589674742086,
+      "tmsi_lower_95": 43.719371995087705,
+      "tmsi_upper_95": 56.79848983967343,
+      "feature_distance_means": {
+        "local_relief": 0.6890919897418846,
+        "slope": 0.7068406087886738,
+        "terrain_ruggedness": 0.7093909235157432
+      },
+      "interpretation": "Intervals quantify spatial sampling variability under this block-size assumption; they are not calibrated probabilities or measurement error bars."
+    },
+    "block_size_sensitivity": {
+      "block_sizes_m": [
+        160,
+        320,
+        640
+      ],
+      "results": {
+        "160": {
+          "method": "non-overlapping spatial block bootstrap with replacement",
+          "block_size_m": 160.0,
+          "target_block_size_cells": 8,
+          "candidate_block_size_cells": 8,
+          "repetitions": 32,
+          "seed": 42,
+          "tmsi_mean": 49.674917905206485,
+          "tmsi_median": 50.168743367229354,
+          "tmsi_lower_95": 42.30786013176713,
+          "tmsi_upper_95": 55.43887888816635,
+          "feature_distance_means": {
+            "local_relief": 0.7357405740860514,
+            "slope": 0.6725546224614505,
+            "terrain_ruggedness": 0.7007963120591673
+          },
+          "interpretation": "Intervals quantify spatial sampling variability under this block-size assumption; they are not calibrated probabilities or measurement error bars."
+        },
+        "320": {
+          "method": "non-overlapping spatial block bootstrap with replacement",
+          "block_size_m": 320.0,
+          "target_block_size_cells": 16,
+          "candidate_block_size_cells": 16,
+          "repetitions": 32,
+          "seed": 42,
+          "tmsi_mean": 49.62664143306004,
+          "tmsi_median": 49.64963286958982,
+          "tmsi_lower_95": 44.33815539252149,
+          "tmsi_upper_95": 55.78433528605889,
+          "feature_distance_means": {
+            "local_relief": 0.6883023561929414,
+            "slope": 0.7162770017227524,
+            "terrain_ruggedness": 0.7034727084995811
+          },
+          "interpretation": "Intervals quantify spatial sampling variability under this block-size assumption; they are not calibrated probabilities or measurement error bars."
+        },
+        "640": {
+          "method": "non-overlapping spatial block bootstrap with replacement",
+          "block_size_m": 640.0,
+          "target_block_size_cells": 32,
+          "candidate_block_size_cells": 32,
+          "repetitions": 32,
+          "seed": 42,
+          "tmsi_mean": 49.75193772070786,
+          "tmsi_median": 50.36769773525531,
+          "tmsi_lower_95": 45.33198779027313,
+          "tmsi_upper_95": 54.35141771300922,
+          "feature_distance_means": {
+            "local_relief": 0.7117922682527624,
+            "slope": 0.6985242109777806,
+            "terrain_ruggedness": 0.6889777075112296
+          },
+          "interpretation": "Intervals quantify spatial sampling variability under this block-size assumption; they are not calibrated probabilities or measurement error bars."
+        }
+      }
+    },
+    "comparison_diagnostics": {
+      "extent": {
+        "extent_km": 10.24,
+        "reference_extent_km": null,
+        "extent_delta_km": null,
+        "extent_ratio": null,
+        "sensitivity_flag": false,
+        "reason": "Extent 10.24 km recorded; no reference extent for comparison."
+      }
+    },
+    "data_sources": [
+      {
+        "path": "/Users/markadam/Desktop/NASA SPACE APP CHALLENGE/nasaspaceapp/data/processed/mars_jezero_ctx_elevation_m.tif",
+        "width": 1596,
+        "height": 1512,
+        "bounds": [
+          4573663.250853,
+          1079453.140188,
+          4605583.250853,
+          1109693.140188
+        ],
+        "crs_wkt": "PROJCS[\"Equirectangular Mars 2000 Sphere IAU\",GEOGCS[\"GCS_Mars_2000_Sphere\",DATUM[\"Mars_2000_(Sphere)\",SPHEROID[\"Mars_2000_Sphere_IAU\",3396190,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "longitude_convention": "Planetocentric longitude; source longitude domain is preserved",
+        "nodata": NaN,
+        "resolution_m": [
+          20.0,
+          20.0
+        ],
+        "effective_resolution_m": null,
+        "source_valid_percent": 100.0,
+        "feature_windows_cells": {
+          "local_relief": 3,
+          "terrain_ruggedness": 3
+        },
+        "feature_summaries": {
+          "slope": {
+            "count": 2406940,
+            "mean": 4.998754501342773,
+            "median": 3.366520881652832,
+            "std": 4.6682634353637695,
+            "q25": 1.7265371084213257,
+            "q75": 6.702472686767578,
+            "q90": 11.593896865844727
+          },
+          "local_relief": {
+            "count": 2406940,
+            "mean": 4.5095906257629395,
+            "median": 3.00830078125,
+            "std": 4.254823684692383,
+            "q25": 1.5703125,
+            "q75": 5.970947265625,
+            "q90": 10.356335639953613
+          },
+          "terrain_ruggedness": {
+            "count": 2406940,
+            "mean": 1.5624487400054932,
+            "median": 1.0494916439056396,
+            "std": 1.4546080827713013,
+            "q25": 0.5565876960754395,
+            "q75": 2.0616164207458496,
+            "q90": 3.576375722885132
+          }
+        }
+      },
+      {
+        "path": "/Users/markadam/Desktop/NASA SPACE APP CHALLENGE/nasaspaceapp/data/processed/moon_lola_80s_20m_elevation_m.tif",
+        "width": 2048,
+        "height": 2048,
+        "bounds": [
+          -20480.0,
+          -20480.0,
+          20480.0,
+          20480.0
+        ],
+        "crs_wkt": "PROJCS[\"Moon (2015) - Sphere / Ocentric / South Polar\",GEOGCS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",SPHEROID[\"Moon (2015) - Sphere\",1737400,0,AUTHORITY[\"IAU\",\"30100\"]],AUTHORITY[\"IAU\",\"30100\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"30100\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"30100\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"30135\"]]",
+        "longitude_convention": "Planetocentric longitude; source longitude domain is preserved",
+        "nodata": NaN,
+        "resolution_m": [
+          20.0,
+          20.0
+        ],
+        "effective_resolution_m": null,
+        "source_valid_percent": 100.0,
+        "feature_windows_cells": {
+          "local_relief": 3,
+          "terrain_ruggedness": 3
+        },
+        "feature_summaries": {
+          "slope": {
+            "count": 4186116,
+            "mean": 13.78176212310791,
+            "median": 11.599422454833984,
+            "std": 9.160831451416016,
+            "q25": 6.46319055557251,
+            "q75": 19.28386688232422,
+            "q90": 29.768028259277344
+          },
+          "local_relief": {
+            "count": 4186116,
+            "mean": 13.053810119628906,
+            "median": 10.524658203125,
+            "std": 9.190032958984375,
+            "q25": 5.81683349609375,
+            "q75": 18.20355224609375,
+            "q90": 28.4102783203125
+          },
+          "terrain_ruggedness": {
+            "count": 4186116,
+            "mean": 4.439925670623779,
+            "median": 3.5977184772491455,
+            "std": 3.073314905166626,
+            "q25": 2.031604290008545,
+            "q75": 6.076421737670898,
+            "q90": 9.953781127929688
+          }
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "common_analysis_scale_m": 20.0,
+    "spatial_extent_km": 10.24,
+    "reproducible": true,
+    "no_upsampling_performed": true
+  }
+}

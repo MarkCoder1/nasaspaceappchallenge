@@ -1,0 +1,10 @@
+from fastapi import APIRouter
+
+from app.schemas.health import HealthResponse
+
+router = APIRouter(prefix="/api", tags=["system"])
+
+
+@router.get("/health", response_model=HealthResponse)
+def health_check() -> HealthResponse:
+    return HealthResponse(status="ok", service="terramatch-backend")

@@ -1,0 +1,138 @@
+{
+  "collection_id": "C2763264762-LPCLOUD",
+  "roi_bbox_west_south_east_north": [
+    -68.0,
+    -24.0,
+    -67.0,
+    -23.0
+  ],
+  "granules": [
+    {
+      "granule_id": "G2816779962-LPCLOUD",
+      "title": "NASADEM_HGT_s23w067",
+      "boxes": [
+        "-23.0001389 -67.0001389 -21.9998611 -65.9998611"
+      ],
+      "data_links": [
+        "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s23w067/NASADEM_HGT_s23w067.zip",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264762-LPCLOUD",
+        "https://appeears.earthdatacloud.nasa.gov/",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264764-LPCLOUD",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264768-LPCLOUD"
+      ]
+    },
+    {
+      "granule_id": "G2816779993-LPCLOUD",
+      "title": "NASADEM_HGT_s23w068",
+      "boxes": [
+        "-23.0001389 -68.0001389 -21.9998611 -66.9998611"
+      ],
+      "data_links": [
+        "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s23w068/NASADEM_HGT_s23w068.zip",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264762-LPCLOUD",
+        "https://appeears.earthdatacloud.nasa.gov/",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264764-LPCLOUD",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264768-LPCLOUD"
+      ]
+    },
+    {
+      "granule_id": "G2816780543-LPCLOUD",
+      "title": "NASADEM_HGT_s24w068",
+      "boxes": [
+        "-24.0001389 -68.0001389 -22.9998611 -66.9998611"
+      ],
+      "data_links": [
+        "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s24w068/NASADEM_HGT_s24w068.zip",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264762-LPCLOUD",
+        "https://appeears.earthdatacloud.nasa.gov/",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264764-LPCLOUD",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264768-LPCLOUD"
+      ]
+    },
+    {
+      "granule_id": "G2816780587-LPCLOUD",
+      "title": "NASADEM_HGT_s24w069",
+      "boxes": [
+        "-24.0001389 -69.0001389 -22.9998611 -67.9998611"
+      ],
+      "data_links": [
+        "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s24w069/NASADEM_HGT_s24w069.zip",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264762-LPCLOUD",
+        "https://appeears.earthdatacloud.nasa.gov/",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264764-LPCLOUD",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264768-LPCLOUD"
+      ]
+    },
+    {
+      "granule_id": "G2816780605-LPCLOUD",
+      "title": "NASADEM_HGT_s24w067",
+      "boxes": [
+        "-24.0001389 -67.0001389 -22.9998611 -65.9998611"
+      ],
+      "data_links": [
+        "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s24w067/NASADEM_HGT_s24w067.zip",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264762-LPCLOUD",
+        "https://appeears.earthdatacloud.nasa.gov/",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264764-LPCLOUD",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264768-LPCLOUD"
+      ]
+    },
+    {
+      "granule_id": "G2816780636-LPCLOUD",
+      "title": "NASADEM_HGT_s23w069",
+      "boxes": [
+        "-23.0001389 -69.0001389 -21.9998611 -67.9998611"
+      ],
+      "data_links": [
+        "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s23w069/NASADEM_HGT_s23w069.zip",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264762-LPCLOUD",
+        "https://appeears.earthdatacloud.nasa.gov/",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264764-LPCLOUD",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264768-LPCLOUD"
+      ]
+    },
+    {
+      "granule_id": "G2816781226-LPCLOUD",
+      "title": "NASADEM_HGT_s25w069",
+      "boxes": [
+        "-25.0001389 -69.0001389 -23.9998611 -67.9998611"
+      ],
+      "data_links": [
+        "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s25w069/NASADEM_HGT_s25w069.zip",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264762-LPCLOUD",
+        "https://appeears.earthdatacloud.nasa.gov/",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264764-LPCLOUD",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264768-LPCLOUD"
+      ]
+    },
+    {
+      "granule_id": "G2816781234-LPCLOUD",
+      "title": "NASADEM_HGT_s25w068",
+      "boxes": [
+        "-25.0001389 -68.0001389 -23.9998611 -66.9998611"
+      ],
+      "data_links": [
+        "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s25w068/NASADEM_HGT_s25w068.zip",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264762-LPCLOUD",
+        "https://appeears.earthdatacloud.nasa.gov/",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264764-LPCLOUD",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264768-LPCLOUD"
+      ]
+    },
+    {
+      "granule_id": "G2816781399-LPCLOUD",
+      "title": "NASADEM_HGT_s25w067",
+      "boxes": [
+        "-25.0001389 -67.0001389 -23.9998611 -65.9998611"
+      ],
+      "data_links": [
+        "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s25w067/NASADEM_HGT_s25w067.zip",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264762-LPCLOUD",
+        "https://appeears.earthdatacloud.nasa.gov/",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264764-LPCLOUD",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2763264768-LPCLOUD"
+      ]
+    }
+  ],
+  "access": "Protected LP DAAC distribution; Earthdata authentication required"
+}

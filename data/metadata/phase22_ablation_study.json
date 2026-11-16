@@ -1,0 +1,290 @@
+{
+  "Moon-Mars": {
+    "full": {
+      "tmsi": 49.92285382858792,
+      "ci_lower": 42.687759540199565,
+      "ci_upper": 56.919271600406816,
+      "features": [
+        "local_relief",
+        "slope",
+        "terrain_ruggedness"
+      ]
+    },
+    "single_slope": {
+      "tmsi": 50.38759096672298,
+      "features": [
+        "slope"
+      ]
+    },
+    "single_local_relief": {
+      "tmsi": 50.24460531119791,
+      "features": [
+        "local_relief"
+      ]
+    },
+    "single_terrain_ruggedness": {
+      "tmsi": 49.14566058278336,
+      "features": [
+        "terrain_ruggedness"
+      ]
+    },
+    "pair_slope_local_relief": {
+      "tmsi": 50.31604734779032,
+      "features": [
+        "slope",
+        "local_relief"
+      ]
+    },
+    "pair_slope_terrain_ruggedness": {
+      "tmsi": 49.76275156414371,
+      "features": [
+        "slope",
+        "terrain_ruggedness"
+      ]
+    },
+    "pair_local_relief_terrain_ruggedness": {
+      "tmsi": 49.69209513333128,
+      "features": [
+        "local_relief",
+        "terrain_ruggedness"
+      ]
+    },
+    "no_ruggedness": {
+      "tmsi": 50.31604734779032,
+      "features": [
+        "slope",
+        "local_relief"
+      ]
+    },
+    "no_slope": {
+      "tmsi": 49.69209513333128,
+      "features": [
+        "local_relief",
+        "terrain_ruggedness"
+      ]
+    },
+    "no_local_relief": {
+      "tmsi": 49.76275156414371,
+      "features": [
+        "slope",
+        "terrain_ruggedness"
+      ]
+    },
+    "weights_2_1_1": {
+      "tmsi": 50.038634712167976,
+      "weights": {
+        "slope": 2.0,
+        "local_relief": 1.0,
+        "terrain_ruggedness": 1.0
+      }
+    },
+    "weights_1_2_1": {
+      "tmsi": 50.003098019418736,
+      "weights": {
+        "slope": 1.0,
+        "local_relief": 2.0,
+        "terrain_ruggedness": 1.0
+      }
+    },
+    "weights_1_1_2": {
+      "tmsi": 49.72741079949528,
+      "weights": {
+        "slope": 1.0,
+        "local_relief": 1.0,
+        "terrain_ruggedness": 2.0
+      }
+    }
+  },
+  "Earth-Moon": {
+    "full": {
+      "tmsi": 61.950148334268185,
+      "ci_lower": 51.992614567899615,
+      "ci_upper": 72.56343808314033,
+      "features": [
+        "local_relief",
+        "slope",
+        "terrain_ruggedness"
+      ]
+    },
+    "single_slope": {
+      "tmsi": 61.89536691600224,
+      "features": [
+        "slope"
+      ]
+    },
+    "single_local_relief": {
+      "tmsi": 62.204609467823516,
+      "features": [
+        "local_relief"
+      ]
+    },
+    "single_terrain_ruggedness": {
+      "tmsi": 61.75133373793113,
+      "features": [
+        "terrain_ruggedness"
+      ]
+    },
+    "pair_slope_local_relief": {
+      "tmsi": 62.04979554259275,
+      "features": [
+        "slope",
+        "local_relief"
+      ]
+    },
+    "pair_slope_terrain_ruggedness": {
+      "tmsi": 61.82330838172408,
+      "features": [
+        "slope",
+        "terrain_ruggedness"
+      ]
+    },
+    "pair_local_relief_terrain_ruggedness": {
+      "tmsi": 61.97755722263697,
+      "features": [
+        "local_relief",
+        "terrain_ruggedness"
+      ]
+    },
+    "no_ruggedness": {
+      "tmsi": 62.04979554259275,
+      "features": [
+        "slope",
+        "local_relief"
+      ]
+    },
+    "no_slope": {
+      "tmsi": 61.97755722263697,
+      "features": [
+        "local_relief",
+        "terrain_ruggedness"
+      ]
+    },
+    "no_local_relief": {
+      "tmsi": 61.82330838172408,
+      "features": [
+        "slope",
+        "terrain_ruggedness"
+      ]
+    },
+    "weights_2_1_1": {
+      "tmsi": 61.936448435897894,
+      "weights": {
+        "slope": 2.0,
+        "local_relief": 1.0,
+        "terrain_ruggedness": 1.0
+      }
+    },
+    "weights_1_2_1": {
+      "tmsi": 62.013665864017156,
+      "weights": {
+        "slope": 1.0,
+        "local_relief": 2.0,
+        "terrain_ruggedness": 1.0
+      }
+    },
+    "weights_1_1_2": {
+      "tmsi": 61.90038475584005,
+      "weights": {
+        "slope": 1.0,
+        "local_relief": 1.0,
+        "terrain_ruggedness": 2.0
+      }
+    }
+  },
+  "Earth-Mars": {
+    "full": {
+      "tmsi": 73.13598243498389,
+      "ci_lower": 64.99424726179397,
+      "ci_upper": 78.55356211259304,
+      "features": [
+        "local_relief",
+        "slope",
+        "terrain_ruggedness"
+      ]
+    },
+    "single_slope": {
+      "tmsi": 74.41740653611168,
+      "features": [
+        "slope"
+      ]
+    },
+    "single_local_relief": {
+      "tmsi": 72.3600920671307,
+      "features": [
+        "local_relief"
+      ]
+    },
+    "single_terrain_ruggedness": {
+      "tmsi": 72.64733002176908,
+      "features": [
+        "terrain_ruggedness"
+      ]
+    },
+    "pair_slope_local_relief": {
+      "tmsi": 73.38153983359939,
+      "features": [
+        "slope",
+        "local_relief"
+      ]
+    },
+    "pair_slope_terrain_ruggedness": {
+      "tmsi": 73.5270419097155,
+      "features": [
+        "slope",
+        "terrain_ruggedness"
+      ]
+    },
+    "pair_local_relief_terrain_ruggedness": {
+      "tmsi": 72.50356880048346,
+      "features": [
+        "local_relief",
+        "terrain_ruggedness"
+      ]
+    },
+    "no_ruggedness": {
+      "tmsi": 73.38153983359939,
+      "features": [
+        "slope",
+        "local_relief"
+      ]
+    },
+    "no_slope": {
+      "tmsi": 72.50356880048346,
+      "features": [
+        "local_relief",
+        "terrain_ruggedness"
+      ]
+    },
+    "no_local_relief": {
+      "tmsi": 73.5270419097155,
+      "features": [
+        "slope",
+        "terrain_ruggedness"
+      ]
+    },
+    "weights_2_1_1": {
+      "tmsi": 73.45425484438951,
+      "weights": {
+        "slope": 2.0,
+        "local_relief": 1.0,
+        "terrain_ruggedness": 1.0
+      }
+    },
+    "weights_1_2_1": {
+      "tmsi": 72.94123334582979,
+      "weights": {
+        "slope": 1.0,
+        "local_relief": 2.0,
+        "terrain_ruggedness": 1.0
+      }
+    },
+    "weights_1_1_2": {
+      "tmsi": 73.01351204946307,
+      "weights": {
+        "slope": 1.0,
+        "local_relief": 1.0,
+        "terrain_ruggedness": 2.0
+      }
+    }
+  }
+}

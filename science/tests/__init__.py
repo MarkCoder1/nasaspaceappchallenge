@@ -1,0 +1,1 @@
+"""Synthetic tests for scientific preprocessing behavior."""

@@ -1,0 +1,18 @@
+{
+  "benchmarks": [
+    {
+      "id": "synthetic_flat_dem",
+      "kind": "synthetic_test_only",
+      "expected_behavior": "identical flat feature distributions have zero distance",
+      "production_eligible": false
+    },
+    {
+      "id": "synthetic_gradient_dem",
+      "kind": "synthetic_test_only",
+      "expected_behavior": "larger feature distribution differences reduce TMSI",
+      "production_eligible": false
+    }
+  ],
+  "real_benchmark_findings": [],
+  "limitation": "No independently labeled real benchmark dataset was available in the verified repository; synthetic entries are software tests only."
+}

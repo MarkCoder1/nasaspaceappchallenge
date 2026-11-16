@@ -1,0 +1,19 @@
+{"timestamp":"00:00:00.447","source":"Server","level":"LOG","message":"- Cache Components enabled"}
+{"timestamp":"00:00:00.447","source":"Server","level":"LOG","message":"- Partial Prefetching enabled"}
+{"timestamp":"00:00:00.447","source":"Server","level":"LOG","message":"- Experiments (use with caution):"}
+{"timestamp":"00:00:00.447","source":"Server","level":"LOG","message":"  ✓ agentFeedback"}
+{"timestamp":"00:00:00.447","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:10.917","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:26.967","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:28.761","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:30.480","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:32.234","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:33.942","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:58.031","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:01:45.204","source":"Server","level":"LOG","message":"✓ Compiled in 16ms"}
+{"timestamp":"00:01:45.238","source":"Server","level":"ERROR","message":"⨯ ReferenceError: ResearchWorkbe is not defined"}
+{"timestamp":"00:03:26.553","source":"Server","level":"LOG","message":"✓ Compiled in 30ms"}
+{"timestamp":"00:03:26.728","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload due to a runtime error."}
+{"timestamp":"00:03:28.692","source":"Server","level":"LOG","message":"✓ Compiled in 11ms"}
+{"timestamp":"00:03:28.709","source":"Server","level":"ERROR","message":"⨯ ReferenceError: ResearchWorkbe is not defined"}
+{"timestamp":"00:03:55.373","source":"Server","level":"LOG","message":"✓ Compiled in 15ms"}

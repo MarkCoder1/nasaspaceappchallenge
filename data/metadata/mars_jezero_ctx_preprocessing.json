@@ -1,0 +1,126 @@
+{
+  "dataset": "mars_jezero_ctx_dtm",
+  "generated_at_utc": "2026-11-14T04:32:17.207118+00:00",
+  "source_url": "https://planetarymaps.usgs.gov/mosaic/mars2020_trn/CTX/JEZ_ctx_B_soc_008_DTM_MOLAtopography_DeltaGeoid_20m_Eqc_latTs0_lon0.tif",
+  "original_file": "data/raw/JEZ_ctx_B_soc_008_DTM_MOLAtopography_DeltaGeoid_20m_Eqc_latTs0_lon0.tif",
+  "processed_file": "data/processed/mars_jezero_ctx_elevation_m.tif",
+  "original_units": "meters",
+  "processed_units": "m",
+  "unit_conversion": {
+    "formula": "identity: elevation_m = elevation_m",
+    "applied": false
+  },
+  "original_resolution": [
+    20.0,
+    20.0
+  ],
+  "processed_resolution": [
+    20.0,
+    20.0
+  ],
+  "resolution_decision": {
+    "resampled": false,
+    "method": "none",
+    "rationale": "The only verified input is processed at native 20 m spacing; no unsupported detail is introduced."
+  },
+  "coordinate_system": {
+    "body": "Mars",
+    "identifier": "ESRI:103885",
+    "wkt": "PROJCS[\"Equirectangular Mars 2000 Sphere IAU\",GEOGCS[\"GCS_Mars_2000_Sphere\",DATUM[\"Mars_2000_(Sphere)\",SPHEROID[\"Mars_2000_Sphere_IAU\",3396190,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "longitude_convention": "Planetocentric longitude; source longitude domain is preserved",
+    "notes": "Planetary body-fixed CRS; do not reinterpret coordinates as terrestrial latitude/longitude."
+  },
+  "validation": {
+    "body": "Mars",
+    "units": "meters",
+    "shape": [
+      1512,
+      1596
+    ],
+    "resolution": [
+      20.0,
+      20.0
+    ],
+    "valid_pixel_count": 2413152,
+    "minimum": -2710.69580078125,
+    "maximum": -1515.53955078125
+  },
+  "original_quality": {
+    "file": "data/raw/JEZ_ctx_B_soc_008_DTM_MOLAtopography_DeltaGeoid_20m_Eqc_latTs0_lon0.tif",
+    "sha256": "16a1aa66c3f48c1bca252795827db7b417876217aff0f5e1aff18027fab2327b",
+    "driver": "GTiff",
+    "width": 1596,
+    "height": 1512,
+    "bands": 1,
+    "dtype": "float32",
+    "nodata": -3.4028226550889045e+38,
+    "bounds": [
+      4573663.250853,
+      1079453.140188,
+      4605583.250853,
+      1109693.140188
+    ],
+    "resolution": [
+      20.0,
+      20.0
+    ],
+    "valid_pixel_count": 2413152,
+    "total_pixel_count": 2413152,
+    "valid_percent": 100.0,
+    "missing_percent": 0.0,
+    "finite_min": -2710.69580078125,
+    "finite_max": -1515.53955078125,
+    "finite_mean": -2356.869384765625,
+    "nonfinite_valid_count": 0,
+    "coordinate_system": {
+      "body": "Mars",
+      "identifier": "ESRI:103885",
+      "wkt": "PROJCS[\"Equirectangular Mars 2000 Sphere IAU\",GEOGCS[\"GCS_Mars_2000_Sphere\",DATUM[\"Mars_2000_(Sphere)\",SPHEROID[\"Mars_2000_Sphere_IAU\",3396190,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "longitude_convention": "Planetocentric longitude; source longitude domain is preserved",
+      "notes": "Planetary body-fixed CRS; do not reinterpret coordinates as terrestrial latitude/longitude."
+    },
+    "tags": {
+      "AREA_OR_POINT": "Area"
+    },
+    "band_tags": {},
+    "raster_checksum": 19489
+  },
+  "processed_quality": {
+    "file": "data/processed/mars_jezero_ctx_elevation_m.tif",
+    "shape": [
+      1512,
+      1596
+    ],
+    "dtype": "float32",
+    "nodata": NaN,
+    "valid_pixel_count": 2413152,
+    "missing_pixel_count": 0,
+    "valid_percent": 100.0,
+    "missing_percent": 0.0,
+    "nonfinite_count": 0,
+    "minimum": -2710.69580078125,
+    "maximum": -1515.53955078125,
+    "mean": -2356.869384765625,
+    "unique_value_count": 1636623,
+    "duplicate_value_percent": 32.179033894259454,
+    "checksum": 19489
+  },
+  "processing_operations": [
+    "Validated Mars CRS, one band, finite values, meters, and native 20 m resolution",
+    "Preserved source values, extent, CRS, transform, and native resolution",
+    "Represented the source nodata sentinel as NaN plus an internal raster mask",
+    "Wrote DEFLATE-compressed GeoTIFF to data/processed"
+  ],
+  "normalized_variables": [],
+  "warnings": [
+    "The source contains no observed missing pixels; its nodata sentinel remains documented",
+    "No Earth or Moon raster was available for harmonization",
+    "No temperature, thermal inertia, geology, slope, or roughness variable was processed"
+  ],
+  "known_limitations": [
+    "This is a Jezero-specific Mars terrain product, not a global Mars elevation model",
+    "Mars planetary coordinates are not interchangeable with Earth geographic coordinates",
+    "No cross-body normalization was created because compatible Earth and Moon inputs are unavailable"
+  ],
+  "source_metadata_file": "data/metadata/mars_jezero_ctx_dtm.json"
+}

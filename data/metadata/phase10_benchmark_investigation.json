@@ -1,0 +1,145 @@
+{
+  "experiment": "phase10_benchmark_investigation",
+  "weights": {
+    "slope": 1.0,
+    "local_relief": 1.0,
+    "terrain_ruggedness": 1.0
+  },
+  "cell_m": 20.0,
+  "finding": "No fully independent external benchmark was obtainable within constraints (Earth NASADEM blocked by Earthdata authentication; alternative planetary DEMs either require auth or exceed bounded-download limits). Same-body window-vs-window methodological self-consistency tests are reported instead, with clear caveats.",
+  "benchmark_available": false,
+  "same_body_tests": [
+    {
+      "label": "Moon center vs Moon northwest (20.48 km)",
+      "n_cells": 1024,
+      "extent_km": 20.48,
+      "similarity_index": 58.13177661308393,
+      "confidence": "HIGH",
+      "combined_distance": 0.5424577419845279,
+      "feature_distances": {
+        "local_relief": 0.5402098584901962,
+        "slope": 0.5436865415795659,
+        "terrain_ruggedness": 0.5434768258838217
+      },
+      "window_a_offset": [
+        512,
+        512
+      ],
+      "window_b_offset": [
+        0,
+        0
+      ]
+    },
+    {
+      "label": "Moon center vs Moon southeast (20.48 km)",
+      "n_cells": 1024,
+      "extent_km": 20.48,
+      "similarity_index": 83.32072755734156,
+      "confidence": "HIGH",
+      "combined_distance": 0.18247283754821222,
+      "feature_distances": {
+        "local_relief": 0.1852500316754986,
+        "slope": 0.17924788768024094,
+        "terrain_ruggedness": 0.18292059328889715
+      },
+      "window_a_offset": [
+        512,
+        512
+      ],
+      "window_b_offset": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "label": "Moon northwest vs Moon southeast (20.48 km)",
+      "n_cells": 1024,
+      "extent_km": 20.48,
+      "similarity_index": 54.89678941967783,
+      "confidence": "HIGH",
+      "combined_distance": 0.5997153196985451,
+      "feature_distances": {
+        "local_relief": 0.5888371753757077,
+        "slope": 0.6113959594000679,
+        "terrain_ruggedness": 0.5989128243198597
+      },
+      "window_a_offset": [
+        0,
+        0
+      ],
+      "window_b_offset": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "label": "Mars center vs Mars northwest (10.24 km)",
+      "n_cells": 512,
+      "extent_km": 10.24,
+      "similarity_index": 56.179988690124915,
+      "confidence": "HIGH",
+      "combined_distance": 0.5766095656269852,
+      "feature_distances": {
+        "local_relief": 0.5760277247250958,
+        "slope": 0.567120429311789,
+        "terrain_ruggedness": 0.5866805428440708
+      },
+      "window_a_offset": [
+        542,
+        500
+      ],
+      "window_b_offset": [
+        0,
+        0
+      ]
+    },
+    {
+      "label": "Mars center vs Mars southeast (10.24 km)",
+      "n_cells": 512,
+      "extent_km": 10.24,
+      "similarity_index": 65.50918786131317,
+      "confidence": "HIGH",
+      "combined_distance": 0.42297978049237517,
+      "feature_distances": {
+        "local_relief": 0.42959661525081205,
+        "slope": 0.41339657962479526,
+        "terrain_ruggedness": 0.42594614660151814
+      },
+      "window_a_offset": [
+        542,
+        500
+      ],
+      "window_b_offset": [
+        1084,
+        1000
+      ]
+    },
+    {
+      "label": "Mars northwest vs Mars southeast (10.24 km)",
+      "n_cells": 512,
+      "extent_km": 10.24,
+      "similarity_index": 46.54518110686892,
+      "confidence": "HIGH",
+      "combined_distance": 0.7647467084213231,
+      "feature_distances": {
+        "local_relief": 0.7646607653513945,
+        "slope": 0.75298494454039,
+        "terrain_ruggedness": 0.7765944153721845
+      },
+      "window_a_offset": [
+        0,
+        0
+      ],
+      "window_b_offset": [
+        1084,
+        1000
+      ]
+    }
+  ],
+  "cross_body_reference": {
+    "label": "Moon vs Mars (full validated extents, historical baseline)",
+    "similarity_index": 49.92285382858792,
+    "confidence": "HIGH",
+    "note": "Cross-body TMSI from Phase 7 baseline; a reference point, not a benchmark."
+  }
+}

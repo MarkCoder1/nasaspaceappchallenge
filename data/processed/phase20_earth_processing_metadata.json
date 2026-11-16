@@ -1,0 +1,65 @@
+{
+  "processing_type": "earth_dem_reprojection_and_normalization",
+  "source_crs": "EPSG:4269 (NAD83 geographic)",
+  "target_crs": "EPSG:26911 (UTM Zone 11N)",
+  "target_resolution_m": 20.0,
+  "resampling_method": "bilinear_interpolation",
+  "important_limitations": [
+    "USGS 3DEP 1-arc-second data at ~29.3 m native resolution",
+    "Resampling to 20 m does NOT increase measurement resolution",
+    "Effective resolution remains ~29.3 m after downsampling",
+    "Vertical datum: NAVD88 (differs from lunar LOLA datum and Martian delta geoid)",
+    "Horizontal datum: NAD83 (differs from body-specific datums)",
+    "Coverage limited to US territory (Southern Arizona and Central Valley, California)"
+  ],
+  "results": [
+    {
+      "source_file": "/Users/markadam/Desktop/NASA SPACE APP CHALLENGE/nasaspaceapp/data/raw/USGS_1_n36w117.tif",
+      "output_file": "/Users/markadam/Desktop/NASA SPACE APP CHALLENGE/nasaspaceapp/data/processed/USGS_1_n36w117_20m_utm11n.tif",
+      "source_crs": "EPSG:4269",
+      "target_crs": "EPSG:26911",
+      "source_resolution_m": 0.000277777777786999,
+      "target_resolution_m": 20.0,
+      "resampling_method": "bilinear",
+      "source_dimensions": [
+        3612,
+        3612
+      ],
+      "output_dimensions": [
+        4579,
+        5588
+      ],
+      "elevation_range_m": [
+        -72.87152862548828,
+        1868.8282470703125
+      ],
+      "mean_elevation_m": 671.5901489257812,
+      "valid_pixels": 25315828,
+      "important_note": "Resampled from ~29.3 m to 20 m; effective resolution remains ~29.3 m. No new information created."
+    },
+    {
+      "source_file": "/Users/markadam/Desktop/NASA SPACE APP CHALLENGE/nasaspaceapp/data/raw/USGS_1_n37w117.tif",
+      "output_file": "/Users/markadam/Desktop/NASA SPACE APP CHALLENGE/nasaspaceapp/data/processed/USGS_1_n37w117_20m_utm11n.tif",
+      "source_crs": "EPSG:4269",
+      "target_crs": "EPSG:26911",
+      "source_resolution_m": 0.000277777777786999,
+      "target_resolution_m": 20.0,
+      "resampling_method": "bilinear",
+      "source_dimensions": [
+        3612,
+        3612
+      ],
+      "output_dimensions": [
+        4522,
+        5588
+      ],
+      "elevation_range_m": [
+        -85.07843017578125,
+        2176.392333984375
+      ],
+      "mean_elevation_m": 895.3980102539062,
+      "valid_pixels": 25002423,
+      "important_note": "Resampled from ~29.3 m to 20 m; effective resolution remains ~29.3 m. No new information created."
+    }
+  ]
+}

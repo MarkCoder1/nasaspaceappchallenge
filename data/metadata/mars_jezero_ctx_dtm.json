@@ -1,0 +1,18 @@
+{
+  "dataset": "mars_jezero_ctx_dtm",
+  "name": "Mars 2020 Terrain Relative Navigation CTX DTM Mosaic",
+  "planet": "Mars",
+  "institution": "USGS Astrogeology Science Center / NASA MRO CTX",
+  "official_url": "https://astrogeology.usgs.gov/search/map/mars_2020_terrain_relative_navigation_ctx_dtm_mosaic",
+  "source_url": "https://planetarymaps.usgs.gov/mosaic/mars2020_trn/CTX/JEZ_ctx_B_soc_008_DTM_MOLAtopography_DeltaGeoid_20m_Eqc_latTs0_lon0.tif",
+  "local_file": "data/raw/JEZ_ctx_B_soc_008_DTM_MOLAtopography_DeltaGeoid_20m_Eqc_latTs0_lon0.tif",
+  "file_size_bytes": 9662387,
+  "sha256": "16a1aa66c3f48c1bca252795827db7b417876217aff0f5e1aff18027fab2327b",
+  "acquired_at_utc": "2026-11-14T04:23:12.681217+00:00",
+  "variable": "Digital terrain elevation",
+  "units": "meters",
+  "resolution": "20 m pixel spacing",
+  "format": "GeoTIFF",
+  "coverage": "Jezero crater and Mars 2020 landing region; 18.211 to 18.7212 N, 77.1605 to 77.699 E",
+  "limitations": "Jezero-specific and created for terrain-relative navigation; its equirectangular planetary CRS and MOLA control must be preserved"
+}

@@ -1,0 +1,164 @@
+{
+  "dataset": "moon_lola",
+  "state": "VALIDATED",
+  "generated_at_utc": "2026-11-14T18:03:37.281633+00:00",
+  "source_url": "https://pgda.gsfc.nasa.gov/data/LOLA_20mpp/LDEM_80S_20MPP_ADJ.TIF",
+  "official_url": "https://pgda.gsfc.nasa.gov/products/90",
+  "original_file": "data/raw/moon_lola_80s_20m_shackleton_window.tif",
+  "processed_file": "data/processed/moon_lola_80s_20m_elevation_m.tif",
+  "original_units": "m",
+  "processed_units": "m",
+  "original_resolution_m": [
+    20.0,
+    20.0
+  ],
+  "processed_resolution_m": [
+    20.0,
+    20.0
+  ],
+  "effective_resolution_summary": {
+    "source_dimensions": [
+      30400,
+      30400
+    ],
+    "source_resolution_m": [
+      20.0,
+      20.0
+    ],
+    "source_crs": "PROJCS[\"Moon (2015) - Sphere / Ocentric / South Polar\",GEOGCS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",SPHEROID[\"Moon (2015) - Sphere\",1737400,0,AUTHORITY[\"IAU\",\"30100\"]],AUTHORITY[\"IAU\",\"30100\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"30100\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"30100\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"30135\"]]",
+    "source_nodata": NaN,
+    "window": {
+      "col_off": 14176,
+      "row_off": 14176,
+      "width": 2048,
+      "height": 2048
+    },
+    "read_overview_divisor": 64,
+    "read_shape": [
+      32,
+      32
+    ],
+    "window_bounds_m": [
+      -20480.0,
+      -20480.0,
+      20480.0,
+      20480.0
+    ],
+    "valid_pixel_count": 1024,
+    "total_pixel_count": 1024,
+    "valid_percent": 100.0,
+    "missing_percent": 0.0,
+    "minimum": 12.12962818145752,
+    "maximum": 23.840499877929688,
+    "mean": 16.055973052978516
+  },
+  "coordinate_system": {
+    "body": "Moon",
+    "identifier": "PROJCS[\"Moon (2015) - Sphere / Ocentric / South Polar\",GEOGCS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",SPHEROID[\"Moon (2015) - Sphere\",1737400,0,AUTHORITY[\"IAU\",\"30100\"]],AUTHORITY[\"IAU\",\"30100\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"30100\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"30100\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"30135\"]]",
+    "wkt": "PROJCS[\"Moon (2015) - Sphere / Ocentric / South Polar\",GEOGCS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",SPHEROID[\"Moon (2015) - Sphere\",1737400,0,AUTHORITY[\"IAU\",\"30100\"]],AUTHORITY[\"IAU\",\"30100\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"30100\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"30100\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"30135\"]]",
+    "longitude_convention": "Planetocentric longitude; source longitude domain is preserved",
+    "notes": "Planetary body-fixed CRS; do not reinterpret coordinates as terrestrial latitude/longitude."
+  },
+  "validation": {
+    "body": "Moon",
+    "units": "meters",
+    "shape": [
+      2048,
+      2048
+    ],
+    "resolution": [
+      20.0,
+      20.0
+    ],
+    "valid_pixel_count": 4194304,
+    "minimum": -2872.114013671875,
+    "maximum": 1959.417724609375
+  },
+  "original_quality": {
+    "file": "data/raw/moon_lola_80s_20m_shackleton_window.tif",
+    "sha256": "55ff65468068890861a57fecd1f81b64f2f41bc04e0506731530e635aae8b52d",
+    "driver": "GTiff",
+    "width": 2048,
+    "height": 2048,
+    "bands": 1,
+    "dtype": "float32",
+    "nodata": NaN,
+    "bounds": [
+      -20480.0,
+      -20480.0,
+      20480.0,
+      20480.0
+    ],
+    "resolution": [
+      20.0,
+      20.0
+    ],
+    "valid_pixel_count": 4194304,
+    "total_pixel_count": 4194304,
+    "valid_percent": 100.0,
+    "missing_percent": 0.0,
+    "finite_min": -2872.114013671875,
+    "finite_max": 1959.417724609375,
+    "finite_mean": -113.34222412109375,
+    "nonfinite_valid_count": 0,
+    "coordinate_system": {
+      "body": "Moon",
+      "identifier": "PROJCS[\"Moon (2015) - Sphere / Ocentric / South Polar\",GEOGCS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",SPHEROID[\"Moon (2015) - Sphere\",1737400,0,AUTHORITY[\"IAU\",\"30100\"]],AUTHORITY[\"IAU\",\"30100\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"30100\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"30100\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"30135\"]]",
+      "wkt": "PROJCS[\"Moon (2015) - Sphere / Ocentric / South Polar\",GEOGCS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",SPHEROID[\"Moon (2015) - Sphere\",1737400,0,AUTHORITY[\"IAU\",\"30100\"]],AUTHORITY[\"IAU\",\"30100\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"30100\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"30100\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"30135\"]]",
+      "longitude_convention": "Planetocentric longitude; source longitude domain is preserved",
+      "notes": "Planetary body-fixed CRS; do not reinterpret coordinates as terrestrial latitude/longitude."
+    },
+    "tags": {
+      "body": "Moon",
+      "source": "NASA GSFC PGDA LOLA south-polar COG window subset",
+      "units": "m",
+      "variable": "elevation",
+      "AREA_OR_POINT": "Area"
+    },
+    "band_tags": {},
+    "raster_checksum": 32411
+  },
+  "processed_quality": {
+    "file": "data/processed/moon_lola_80s_20m_elevation_m.tif",
+    "shape": [
+      2048,
+      2048
+    ],
+    "dtype": "float32",
+    "nodata": NaN,
+    "valid_pixel_count": 4194304,
+    "missing_pixel_count": 0,
+    "valid_percent": 100.0,
+    "missing_percent": 0.0,
+    "nonfinite_count": 0,
+    "minimum": -2872.114013671875,
+    "maximum": 1959.417724609375,
+    "mean": -113.34222412109375,
+    "unique_value_count": 3980489,
+    "duplicate_value_percent": 5.097746849060059,
+    "checksum": 32411
+  },
+  "processing_operations": [
+    "Validated Moon south-polar stereographic CRS and metre units",
+    "Preserved native 20 m/pixel raster geometry and values",
+    "Preserved the source nodata mask; no missing observations were filled",
+    "Created a DEFLATE-compressed processed GeoTIFF"
+  ],
+  "warnings": [
+    "The effective-resolution ancillary is an overview average over the same window, not a 20 m effective-resolution claim",
+    "The product is a 40.96 km pole-centered subset, not the complete 80S-90S parent DEM",
+    "No Earth-to-Moon coordinate transform was applied"
+  ],
+  "known_limitations": [
+    "This is a pole-centered 40.96 km subset, not the complete 80S-90S parent DEM.",
+    "The subset is native-coordinate bounded; no Earth-to-Moon coordinate transform was applied.",
+    "The source product documents interpolation and adjusted/blended construction; effective resolution must be respected."
+  ],
+  "provenance": {
+    "dem_sha256": "55ff65468068890861a57fecd1f81b64f2f41bc04e0506731530e635aae8b52d",
+    "effective_resolution_sha256": "00092bfe33dda58689f3a52fb342d4ce2ccfcc80d3ea05ccc9d77adac0b2cadc",
+    "citation": "Barker et al., 2023, Planetary Science Journal, 4, 183",
+    "paper_doi": "10.3847/PSJ/acf3e1",
+    "data_doi": "10.60903/gsfcpgda-lola-spole"
+  }
+}

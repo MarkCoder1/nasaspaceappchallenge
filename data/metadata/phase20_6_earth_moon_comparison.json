@@ -1,0 +1,81 @@
+{
+  "tmsi": 61.950148334268185,
+  "ci_lower": 51.992614567899615,
+  "ci_upper": 72.56343808314033,
+  "tmsi_mean": 62.28269513362659,
+  "seed_sensitivity": {
+    "mean_tmsi_across_seeds": 62.33181928133263,
+    "min_tmsi_across_seeds": 62.219299423420935,
+    "max_tmsi_across_seeds": 62.52689515260391,
+    "max_abs_tmsi_diff_across_seeds": 0.30759572918297806,
+    "mean_lower_bound_across_seeds": 51.934410389797996,
+    "mean_upper_bound_across_seeds": 72.75175508031515,
+    "min_lower_bound_across_seeds": 51.15468403187529,
+    "max_upper_bound_across_seeds": 73.37481151957303,
+    "max_abs_lower_diff_across_seeds": 1.4394435871832272,
+    "max_abs_upper_diff_across_seeds": 1.536918614335704
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "tmsi_mean": 62.28269513362659,
+      "tmsi_median": 62.255181408162386,
+      "tmsi_lower_95": 51.992614567899615,
+      "tmsi_upper_95": 72.56343808314033,
+      "repetitions": 1000,
+      "block_size_m": 320.0
+    },
+    {
+      "seed": 123,
+      "tmsi_mean": 62.384815777650395,
+      "tmsi_median": 62.36455742981612,
+      "tmsi_lower_95": 51.72714363221524,
+      "tmsi_upper_95": 72.86095336810449,
+      "repetitions": 1000,
+      "block_size_m": 320.0
+    },
+    {
+      "seed": 456,
+      "tmsi_mean": 62.219299423420935,
+      "tmsi_median": 61.91832822950593,
+      "tmsi_lower_95": 52.59412761905852,
+      "tmsi_upper_95": 73.12167952552058,
+      "repetitions": 1000,
+      "block_size_m": 320.0
+    },
+    {
+      "seed": 789,
+      "tmsi_mean": 62.24539091936125,
+      "tmsi_median": 62.317780263477204,
+      "tmsi_lower_95": 52.20348209794134,
+      "tmsi_upper_95": 71.83789290523733,
+      "repetitions": 1000,
+      "block_size_m": 320.0
+    },
+    {
+      "seed": 1011,
+      "tmsi_mean": 62.52689515260391,
+      "tmsi_median": 62.51768133538594,
+      "tmsi_lower_95": 51.15468403187529,
+      "tmsi_upper_95": 73.37481151957303,
+      "repetitions": 1000,
+      "block_size_m": 320.0
+    }
+  ],
+  "limitations": [
+    "TMSI is a terrain-morphology index, not a probability, habitability score, or safety certification.",
+    "Features are interpreted at a common physical scale of 20 m; no raster upsampling was performed.",
+    "Earth and planetary environmental conditions remain physically different even when morphology distributions are similar.",
+    "Earth DEM source data has approximately 29.3 m native resolution and was resampled to a 20 m processing grid; the resampling does not create additional observational detail. Effective measurement resolution remains constrained by the ~29.3 m source data.",
+    "Vertical datum difference: Earth uses NAVD88; Moon uses LOLA project datum; Mars uses delta geoid (MOLA control). Vertical datum differences are unquantified and may affect elevation-based feature comparisons (slope, local relief, terrain ruggedness).",
+    "Earth coverage is limited to two USGS 3DEP tiles (Death Valley / southern Arizona region, approximately 35\u00b0N\u201337\u00b0N, 116\u00b0W\u2013117\u00b0W). These samples cannot establish global terrestrial terrain representativeness; results apply only to the sampled regions."
+  ],
+  "strongest_matches": [
+    "local_relief",
+    "slope"
+  ],
+  "largest_differences": [
+    "terrain_ruggedness",
+    "slope"
+  ]
+}

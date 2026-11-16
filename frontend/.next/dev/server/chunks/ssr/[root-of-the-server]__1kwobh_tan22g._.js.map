@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 19, "column": 0}, "map": {"version":3,"sources":["file:///Users/markadam/Desktop/NASA%20SPACE%20APP%20CHALLENGE/nasaspaceapp/frontend/app/favicon.ico.mjs%20(structured%20image%20object)"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 48, height: 48 }\n"],"names":["src","width","height"],"mappings":";;;;AAAA;;uCACe;IAAEA,KAAAA,+IAAG;IAAEC,OAAO;IAAIC,QAAQ;AAAG"}},
+    {"offset": {"line": 34, "column": 0}, "map": {"version":3,"sources":["file:///Users/markadam/Desktop/NASA%20SPACE%20APP%20CHALLENGE/nasaspaceapp/frontend/app/page.tsx"],"sourcesContent":["import ResearchWorkbench from \"@/components/ResearchWorkbench\";\n\nexport default function Home() {\n  return <ResearchWorkbe  nch />;\n}\n"],"names":["Home","ResearchWorkbe","nch"],"mappings":";;;;;;AAEe,SAASA;IACtB,qBAAO,0PAACC;QAAgBC,GAAG;;;;;;AAC7B"}}]
+}
