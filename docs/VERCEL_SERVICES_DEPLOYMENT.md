@@ -64,13 +64,20 @@ Frontend: `lib/api.ts` exports `apiUrl` = `NEXT_PUBLIC_API_URL` when set, else `
 - Endpoint suite (all HTTP 200 except intentional negative cases):
   `GET /api/health` ✓ · `GET /api/candidates` ✓ · `GET /api/candidates/terrain-grid/death_valley` ✓ (real n37w117 grid) · `GET /api/similarity/status` ✓ · `GET /api/similarity/results` ✓ (Moon↔Mars 49.92 stored experiment) · `GET /api/similarity/sampling-framework` ✓ · `GET /api/similarity/features` ✓ · `GET /api/similarity/methodology` ✓ · `GET /api/similarity/terrain-grid/moon_lola` ✓ · `GET /api/similarity/terrain-grid/mars_jezero_ctx_dtm` ✓ · `GET /api/similarity/terrain-grid/death_valley` → **409 `{"detail":"Dataset is unavailable: death_valley"}` (correct — death_valley is served by `/api/candidates/terrain-grid/death_valley`, not the similarity registry)** · JSON export ✓ · CSV export ✓ · PDF export ✓ (valid `%PDF-1.4`, ReportLab) · `atacama` terrain → 404 with explicit unavailable message ✓.
 
-## Unresolved / honest caveats
+## Production outcome (2026-11-16, verified live)
 
-1. `npx vercel build` could not be run: CLI is not authenticated (`login_required`). The config is validated structurally + against the current Services spec (schema-valid JSON; framework slugs `nextjs`/`fastapi`; entrypoint module path; top-level rewrites preserve original path). **Production behavior is not verified — this is a preparation, not a deployment.**
-2. Repo carries ~486 MB of committed build artifacts (`node_modules/` ~670 MB + `frontend/.next`); cloning will be slow but works. Untrack them later (git history rewrite) if desired — not done in this phase.
-3. Science research scripts reference the old repo-root `data/`/`science/` paths (e.g., `data_ingestion/*`, `science/preprocessing/pipeline.py`); they are intentionally untouched and excluded from the function bundle; run research tooling from `backend/` now.
-4. Vercel Services is **public Beta on all plans (incl. Hobby)**; timing/limits per Vercel docs may change — re-check Fluid compute defaults and limits at deploy time.
-5. No CPU-intensive work happens at request time (grids are raster-read + numpy), so Hobby 2 GB / 300 s are adequate.
+1. `vercel login` restored by owner (`lionzak`). Project `lionzaks-projects/nasaspaceappchallenge` confirmed: Root Directory = `.`, Framework Preset Services (frontend + backend, one project, one shared domain). The suspected `frontend/` Root Directory bug was **disproven by inspection**; the real failure was Python runtime library missing.
+2. First production deploy (e4863f29) reported successful builds; backend service crashed at cold start: `ImportError: libexpat.so.1` in Vercel's python3.12 runtime — GDAL-linked manylinux wheels (rasterio) require a system `libexpat.so.1` the Vercel runtime does not provide. `/api/*` → **HTTP 500 for every endpoint**.
+3. Fix: backend switched to Vercel **container runtime** — `backend/Dockerfile` (`python:3.12-slim` + `apt-get install libexpat1`), `backend/.dockerignore` added, `entrypoint: "Dockerfile"` in `vercel.json`; Scientific stack unchanged. Deployment `422a2190` built Ready (`BUILD DURATION 2m`, container image 278.73 MB).
+4. Live production check (all 200): `/api/health`, `/api/candidates` (13), `/api/similarity/{results,status,sampling-framework,features,methodology}`, both raster terrain-grids, Death Valley candidates terrain-grid, CSV/JSON/PDF exports, `GET /` homepage; all layers (elevation/hillshade/slope/local_relief/terrain_ruggedness) return physically validated ranges.
+5. Follow-up measured fix: `_slope_degrees` and `_hillshade` were not scaling by grid cell size (32×32 / 192×192 preview), making slope read ~90° everywhere; now divided by cell meters. Commit `52ac50bf`. Slope reads 0.03–35.4° on Moon LOLA (previous reading was nonsense); identical science is untouched.
+6. Alias verified live: https://nasaspaceappchallenge-six.vercel.app (set from the deployment, previously `nasaspaceappchallenge-six.vercel.app` consistently) — BACKEND ONLINE, 3 terrain datasets render real data, 13 MAP markers, COMPARE 49.92, zero console errors.
+
+## Remaining limitations (honest)
+1. Repo carries ~486 MB of committed build artifacts (`node_modules/`, `.next/`); cloning is slow; untrack later (git-file removal) if desired.
+2. Vercel Services/Container Runtime are public Beta; plans/limits may change; re-check at deploy time.
+3. Science research scripts reference the old repo-root `data/`/`science/` paths; they are intentionally untouched; run research tooling from `backend/`.
+4. NASADEM remains blocked (Earthdata HTTP 401); Earth – Moon/Mars comparisons remain limited to the two USGS 3DEP tiles; no candidate is field-validated.
 
 ## Exact steps to deploy (user runs these)
 
