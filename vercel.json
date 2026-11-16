@@ -12,7 +12,7 @@
       "functions": {
         "app/main.py": {
           "maxDuration": 300,
-          "excludeFiles": "{data/raw/**,data/processed/USGS_1_n36w117_20m_utm11n.tif,data/processed/moon_lola_central_20km_window.tif,tests/**,science/tests/**,science/validation/**,science/data_ingestion/**,science/preprocessing/pipeline.py,science/preprocessing/process_moon_lola.py,science/similarity/validation/**,**/__pycache__/**,**/*.pyc,.venv/**,requirements-dev.txt,.env*"
+          "excludeFiles": "data/raw/**,data/processed/{USGS_1_n36w117_20m_utm11n,moon_lola_central_20km_window}.tif,science/{tests,validation,data_ingestion,similarity/validation}/**,science/preprocessing/{pipeline,process_moon_lola}.py,**/__pycache__/**,.venv/**,tests/**,.env*"
         }
       }
     }
