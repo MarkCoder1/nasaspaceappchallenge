@@ -106,7 +106,8 @@ def terrain_grid(dataset_id: str, layer: str = "elevation", resampling: str = "a
         values = dataset.read(1, out_shape=(1, out_h, out_w), masked=True, resampling=rs)
         elevation = values.filled(np.nan).astype(float)
         valid = np.isfinite(elevation)
-        layer_values = _compute_layer(elevation, valid, layer) if layer != "elevation" else elevation
+        cell_m = float(dataset.res[0]) * (src_w / out_w) if out_w else float(dataset.res[0])
+        layer_values = _compute_layer(elevation, valid, layer, cell_m) if layer != "elevation" else elevation
         finite = valid & np.isfinite(layer_values)
         lo = float(np.nanpercentile(layer_values, 2)) if finite.any() else 0.0
         hi = float(np.nanpercentile(layer_values, 98)) if finite.any() else 1.0
@@ -147,7 +148,8 @@ def raster_preview_svg(dataset_id: str, width: int = 360, height: int = 240, lay
         values = dataset.read(1, out_shape=(1, height, width), masked=True, resampling=rasterio.enums.Resampling.average)
         elevation = values.filled(np.nan).astype(float)
         valid = np.isfinite(elevation)
-        layer_values = _compute_layer(elevation, valid, layer)
+        cell_m = float(dataset.res[0]) * (src_w_ref / width) if (src_w_ref := dataset.width) else float(dataset.res[0])
+        layer_values = _compute_layer(elevation, valid, layer, cell_m)
         finite = valid & np.isfinite(layer_values)
         if finite.any():
             minimum = float(np.nanpercentile(layer_values, 2))
@@ -178,14 +180,14 @@ def raster_preview_svg(dataset_id: str, width: int = 360, height: int = 240, lay
         )
 
 
-def _compute_layer(elevation: np.ndarray, valid: np.ndarray, layer: str) -> np.ndarray:
+def _compute_layer(elevation: np.ndarray, valid: np.ndarray, layer: str, cell_m: float = 1.0) -> np.ndarray:
     out = np.full(elevation.shape, np.nan, dtype=float)
     if layer == "elevation":
         out = elevation.copy()
     elif layer == "hillshade":
-        out = _hillshade(elevation, valid)
+        out = _hillshade(elevation, valid, cell_m)
     elif layer == "slope":
-        out = _slope_degrees(elevation, valid)
+        out = _slope_degrees(elevation, valid, cell_m)
     elif layer == "local_relief":
         out = _local_relief(elevation, valid, window_cells=3)
     elif layer == "terrain_ruggedness":
@@ -193,16 +195,16 @@ def _compute_layer(elevation: np.ndarray, valid: np.ndarray, layer: str) -> np.n
     return out
 
 
-def _hillshade(elevation: np.ndarray, valid: np.ndarray) -> np.ndarray:
+def _hillshade(elevation: np.ndarray, valid: np.ndarray, cell_m: float = 1.0) -> np.ndarray:
     # Simple shaded relief from central differences (azimuth 315°, altitude 45°).
-    gy, gx = np.gradient(np.where(valid, elevation, 0.0))
+    gy, gx = np.gradient(np.where(valid, elevation, 0.0), cell_m)
     shaded = 0.5 * (-gx) + 0.5 * (-gy)
     shaded = np.where(valid, shaded, np.nan)
     return shaded
 
 
-def _slope_degrees(elevation: np.ndarray, valid: np.ndarray) -> np.ndarray:
-    gy, gx = np.gradient(np.where(valid, elevation, 0.0))
+def _slope_degrees(elevation: np.ndarray, valid: np.ndarray, cell_m: float = 1.0) -> np.ndarray:
+    gy, gx = np.gradient(np.where(valid, elevation, 0.0), cell_m)
     slope = np.degrees(np.arctan(np.sqrt(gx * gx + gy * gy)))
     slope = np.where(valid, slope, np.nan)
     return slope
