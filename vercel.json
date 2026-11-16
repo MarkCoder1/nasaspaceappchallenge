@@ -7,18 +7,21 @@
     },
     "backend": {
       "root": "backend/",
-      "framework": "fastapi",
-      "entrypoint": "app.main:app",
-      "functions": {
-        "app/main.py": {
-          "maxDuration": 300,
-          "excludeFiles": "data/raw/**,data/processed/{USGS_1_n36w117_20m_utm11n,moon_lola_central_20km_window}.tif,science/{tests,validation,data_ingestion,similarity/validation}/**,science/preprocessing/{pipeline,process_moon_lola}.py,**/__pycache__/**,.venv/**,tests/**,.env*"
-        }
-      }
+      "entrypoint": "Dockerfile"
     }
   },
   "rewrites": [
-    { "source": "/api/(.*)", "destination": { "service": "backend" } },
-    { "source": "/(.*)", "destination": { "service": "frontend" } }
+    {
+      "source": "/api/(.*)",
+      "destination": {
+        "service": "backend"
+      }
+    },
+    {
+      "source": "/(.*)",
+      "destination": {
+        "service": "frontend"
+      }
+    }
   ]
 }

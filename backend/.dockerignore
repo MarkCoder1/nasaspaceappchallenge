@@ -1,0 +1,13 @@
+.venv
+__pycache__
+*.pyc
+tests
+science/tests
+science/validation
+science/data_ingestion
+science/similarity/validation
+science/preprocessing/pipeline.py
+science/preprocessing/process_moon_lola.py
+requirements-dev.txt
+.env*
+*.egg-info
