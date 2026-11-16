@@ -1,14 +1,12 @@
+# Terra Twin backend — minimal production runtime dependencies.
+# Audited 2026-11-15 against actual imports in backend/app and backend/science.
+# Intentionally excluded (unused at runtime): pandas, geopandas, pyogrio, xarray,
+# botocore, earthaccess, pytest, httpx2 (unused pin).
 fastapi>=0.115,<1.0
 uvicorn[standard]>=0.34,<1.0
 pydantic>=2.10,<3.0
 numpy>=2.0,<3.0
-pandas>=2.2,<3.0
 scipy>=1.14,<2.0
 rasterio>=1.4,<2.0
-geopandas>=1.0,<2.0
-xarray>=2024.10,<2026.0
-pytest>=8.3,<9.0
-httpx2>=2.0,<3.0
-certifi>=2024.8,<2027.0
-earthaccess>=0.15,<1.0
 reportlab>=4.0,<6.0
+certifi>=2024.8,<2027.0

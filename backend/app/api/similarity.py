@@ -44,7 +44,7 @@ def get_sampling_framework() -> dict[str, object]:
 
     import json
 
-    repository_root = Path(__file__).resolve().parents[3]
+    repository_root = Path(__file__).resolve().parents[2]
     artifact = repository_root / "data/metadata/phase11_sampling_framework.json"
     if not artifact.is_file():
         raise HTTPException(status_code=404, detail="sampling framework artifact not found")

@@ -838,9 +838,11 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/lib/api.ts [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 const RAMPS = {
     terrain: (t)=>{
@@ -883,7 +885,7 @@ function CandidateTerrainPreview({ candidateId, layer = "elevation", skipFetch =
                 return undefined;
             }
             let cancelled = false;
-            fetch(`http://localhost:8000/api/candidates/terrain-grid/${encodeURIComponent(candidateId)}?layer=${encodeURIComponent(layer)}&max_dim=144`, {
+            fetch(`${__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["apiUrl"]}/api/candidates/terrain-grid/${encodeURIComponent(candidateId)}?layer=${encodeURIComponent(layer)}&max_dim=144`, {
                 cache: "no-store"
             }).then({
                 "CandidateTerrainPreview.useEffect": async (res)=>{
@@ -948,12 +950,12 @@ function CandidateTerrainPreview({ candidateId, layer = "elevation", skipFetch =
                 children: "VERIFIED TERRAIN — LOADING"
             }, void 0, false, {
                 fileName: "[project]/frontend/components/CandidateTerrainPreview.tsx",
-                lineNumber: 99,
+                lineNumber: 100,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/frontend/components/CandidateTerrainPreview.tsx",
-            lineNumber: 98,
+            lineNumber: 99,
             columnNumber: 7
         }, this);
     }
@@ -967,7 +969,7 @@ function CandidateTerrainPreview({ candidateId, layer = "elevation", skipFetch =
                     children: "TERRAIN UNAVAILABLE"
                 }, void 0, false, {
                     fileName: "[project]/frontend/components/CandidateTerrainPreview.tsx",
-                    lineNumber: 107,
+                    lineNumber: 108,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -978,26 +980,26 @@ function CandidateTerrainPreview({ candidateId, layer = "elevation", skipFetch =
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/frontend/components/CandidateTerrainPreview.tsx",
-                                    lineNumber: 112,
+                                    lineNumber: 113,
                                     columnNumber: 29
                                 }, this),
                                 errorMessage
                             ]
                         }, void 0, true, {
                             fileName: "[project]/frontend/components/CandidateTerrainPreview.tsx",
-                            lineNumber: 112,
+                            lineNumber: 113,
                             columnNumber: 27
                         }, this) : null
                     ]
                 }, void 0, true, {
                     fileName: "[project]/frontend/components/CandidateTerrainPreview.tsx",
-                    lineNumber: 108,
+                    lineNumber: 109,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/frontend/components/CandidateTerrainPreview.tsx",
-            lineNumber: 106,
+            lineNumber: 107,
             columnNumber: 7
         }, this);
     }
@@ -1018,7 +1020,7 @@ function CandidateTerrainPreview({ candidateId, layer = "elevation", skipFetch =
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/CandidateTerrainPreview.tsx",
-                        lineNumber: 124,
+                        lineNumber: 125,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1031,13 +1033,13 @@ function CandidateTerrainPreview({ candidateId, layer = "elevation", skipFetch =
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/CandidateTerrainPreview.tsx",
-                        lineNumber: 125,
+                        lineNumber: 126,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/CandidateTerrainPreview.tsx",
-                lineNumber: 123,
+                lineNumber: 124,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("canvas", {
@@ -1062,7 +1064,7 @@ function CandidateTerrainPreview({ candidateId, layer = "elevation", skipFetch =
                 }
             }, void 0, false, {
                 fileName: "[project]/frontend/components/CandidateTerrainPreview.tsx",
-                lineNumber: 127,
+                lineNumber: 128,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1073,13 +1075,13 @@ function CandidateTerrainPreview({ candidateId, layer = "elevation", skipFetch =
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/CandidateTerrainPreview.tsx",
-                lineNumber: 148,
+                lineNumber: 149,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/CandidateTerrainPreview.tsx",
-        lineNumber: 122,
+        lineNumber: 123,
         columnNumber: 5
     }, this);
 }
@@ -1145,7 +1147,7 @@ function HistogramBars({ values, label, unit, bins = 10 }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 76,
+                        lineNumber: 77,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1159,13 +1161,13 @@ function HistogramBars({ values, label, unit, bins = 10 }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 77,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 75,
+                lineNumber: 76,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1185,13 +1187,13 @@ function HistogramBars({ values, label, unit, bins = 10 }) {
                         fill: "#d59a4c"
                     }, i, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 83,
+                        lineNumber: 84,
                         columnNumber: 18
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 79,
+                lineNumber: 80,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1201,18 +1203,18 @@ function HistogramBars({ values, label, unit, bins = 10 }) {
                         children: fmt(min + i / bins * range, 1)
                     }, i, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 88,
+                        lineNumber: 89,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 86,
+                lineNumber: 87,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-        lineNumber: 74,
+        lineNumber: 75,
         columnNumber: 5
     }, this);
 }
@@ -1244,7 +1246,7 @@ function FeatureChart({ feature, result, selected, setSelected }) {
                                 children: feature.replaceAll("_", " ")
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 120,
+                                lineNumber: 121,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1252,13 +1254,13 @@ function FeatureChart({ feature, result, selected, setSelected }) {
                                 children: result.units
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 121,
+                                lineNumber: 122,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 119,
+                        lineNumber: 120,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1269,20 +1271,20 @@ function FeatureChart({ feature, result, selected, setSelected }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 123,
+                        lineNumber: 124,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 118,
+                lineNumber: 119,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 children: result.definition
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 125,
+                lineNumber: 126,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1294,7 +1296,7 @@ function FeatureChart({ feature, result, selected, setSelected }) {
                                 children: "MARS"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 128,
+                                lineNumber: 129,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
@@ -1303,20 +1305,20 @@ function FeatureChart({ feature, result, selected, setSelected }) {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 129,
+                                lineNumber: 130,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                 children: fmt(target.median)
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 130,
+                                lineNumber: 131,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 127,
+                        lineNumber: 128,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1325,7 +1327,7 @@ function FeatureChart({ feature, result, selected, setSelected }) {
                                 children: "MOON"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 133,
+                                lineNumber: 134,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
@@ -1335,26 +1337,26 @@ function FeatureChart({ feature, result, selected, setSelected }) {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 134,
+                                lineNumber: 135,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                 children: fmt(candidate.median)
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 135,
+                                lineNumber: 136,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 132,
+                        lineNumber: 133,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 126,
+                lineNumber: 127,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1369,7 +1371,7 @@ function FeatureChart({ feature, result, selected, setSelected }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 139,
+                        lineNumber: 140,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1379,7 +1381,7 @@ function FeatureChart({ feature, result, selected, setSelected }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 140,
+                        lineNumber: 141,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1389,7 +1391,7 @@ function FeatureChart({ feature, result, selected, setSelected }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 141,
+                        lineNumber: 142,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1399,13 +1401,13 @@ function FeatureChart({ feature, result, selected, setSelected }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 142,
+                        lineNumber: 143,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 138,
+                lineNumber: 139,
                 columnNumber: 7
             }, this),
             selected === feature && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1417,7 +1419,7 @@ function FeatureChart({ feature, result, selected, setSelected }) {
                         unit: result.units
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 146,
+                        lineNumber: 147,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1428,14 +1430,14 @@ function FeatureChart({ feature, result, selected, setSelected }) {
                                 children: "SCALE"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 148,
+                                lineNumber: 149,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 children: result.distance.neighborhood_m ? fmt(result.distance.neighborhood_m, 0) + " m window" : "native pixel spacing"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 149,
+                                lineNumber: 150,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1443,7 +1445,7 @@ function FeatureChart({ feature, result, selected, setSelected }) {
                                 children: "SAMPLES"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 150,
+                                lineNumber: 151,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1454,25 +1456,25 @@ function FeatureChart({ feature, result, selected, setSelected }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 151,
+                                lineNumber: 152,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 147,
+                        lineNumber: 148,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 145,
+                lineNumber: 146,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-        lineNumber: 114,
+        lineNumber: 115,
         columnNumber: 5
     }, this);
 }
@@ -1516,13 +1518,13 @@ function DistributionChart({ values, color, height = 100, barWidth = 14, gap = 6
                         opacity: 0.85
                     }, i, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 198,
+                        lineNumber: 199,
                         columnNumber: 13
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 186,
+                lineNumber: 187,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1532,12 +1534,12 @@ function DistributionChart({ values, color, height = 100, barWidth = 14, gap = 6
                         children: fmt(min + i / bins * range, 1)
                     }, i, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 212,
+                        lineNumber: 213,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 210,
+                lineNumber: 211,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1552,13 +1554,13 @@ function DistributionChart({ values, color, height = 100, barWidth = 14, gap = 6
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 217,
+                lineNumber: 218,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-        lineNumber: 185,
+        lineNumber: 186,
         columnNumber: 5
     }, this);
 }
@@ -1575,14 +1577,14 @@ function TmsiDistribution({ sampling }) {
                 children: "TERRAIN SIMILARITY DISTRIBUTIONS"
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 230,
+                lineNumber: 231,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                 children: "Within-body vs between-body"
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 231,
+                lineNumber: 232,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1596,7 +1598,7 @@ function TmsiDistribution({ sampling }) {
                                 children: "Within Mars"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 234,
+                                lineNumber: 235,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DistributionChart, {
@@ -1604,13 +1606,13 @@ function TmsiDistribution({ sampling }) {
                                 color: "#b7d36b"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 235,
+                                lineNumber: 236,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 233,
+                        lineNumber: 234,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1621,7 +1623,7 @@ function TmsiDistribution({ sampling }) {
                                 children: "Within Moon"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 238,
+                                lineNumber: 239,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DistributionChart, {
@@ -1629,13 +1631,13 @@ function TmsiDistribution({ sampling }) {
                                 color: "#d59a4c"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 239,
+                                lineNumber: 240,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 237,
+                        lineNumber: 238,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1646,7 +1648,7 @@ function TmsiDistribution({ sampling }) {
                                 children: "Mars lt Moon"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 242,
+                                lineNumber: 243,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DistributionChart, {
@@ -1654,19 +1656,19 @@ function TmsiDistribution({ sampling }) {
                                 color: "#e6bb77"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 243,
+                                lineNumber: 244,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 241,
+                        lineNumber: 242,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 232,
+                lineNumber: 233,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1678,13 +1680,13 @@ function TmsiDistribution({ sampling }) {
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 246,
+                lineNumber: 247,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-        lineNumber: 229,
+        lineNumber: 230,
         columnNumber: 5
     }, this);
 }
@@ -1707,7 +1709,7 @@ function SamplingDiagnostics({ sampling }) {
                         children: "SAMPLING DESIGN"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 264,
+                        lineNumber: 265,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1718,7 +1720,7 @@ function SamplingDiagnostics({ sampling }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 265,
+                        lineNumber: 266,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1728,34 +1730,11 @@ function SamplingDiagnostics({ sampling }) {
                                 children: "MARS WINDOWS"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 266,
-                                columnNumber: 38
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                children: sampling.mars_window_count
-                            }, void 0, false, {
-                                fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 266,
-                                columnNumber: 63
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 266,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "readout-row",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                children: "MOON WINDOWS"
-                            }, void 0, false, {
-                                fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                 lineNumber: 267,
                                 columnNumber: 38
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                children: sampling.moon_window_count
+                                children: sampling.mars_window_count
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                 lineNumber: 267,
@@ -1771,21 +1750,18 @@ function SamplingDiagnostics({ sampling }) {
                         className: "readout-row",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                children: "EXTENT"
+                                children: "MOON WINDOWS"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                 lineNumber: 268,
                                 columnNumber: 38
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                children: [
-                                    extent,
-                                    " km"
-                                ]
-                            }, void 0, true, {
+                                children: sampling.moon_window_count
+                            }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                 lineNumber: 268,
-                                columnNumber: 57
+                                columnNumber: 63
                             }, this)
                         ]
                     }, void 0, true, {
@@ -1797,29 +1773,55 @@ function SamplingDiagnostics({ sampling }) {
                         className: "readout-row",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                children: "STRATEGY"
+                                children: "EXTENT"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                 lineNumber: 269,
                                 columnNumber: 38
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                children: "Multiple non-overlapping windows"
-                            }, void 0, false, {
+                                children: [
+                                    extent,
+                                    " km"
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                 lineNumber: 269,
-                                columnNumber: 59
+                                columnNumber: 57
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                         lineNumber: 269,
                         columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "readout-row",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                children: "STRATEGY"
+                            }, void 0, false, {
+                                fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
+                                lineNumber: 270,
+                                columnNumber: 38
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
+                                children: "Multiple non-overlapping windows"
+                            }, void 0, false, {
+                                fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
+                                lineNumber: 270,
+                                columnNumber: 59
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
+                        lineNumber: 270,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 263,
+                lineNumber: 264,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1830,7 +1832,7 @@ function SamplingDiagnostics({ sampling }) {
                         children: "OVERLAP DIAGNOSTICS"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 272,
+                        lineNumber: 273,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1840,38 +1842,15 @@ function SamplingDiagnostics({ sampling }) {
                                 children: "IDENTICAL"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 273,
+                                lineNumber: 274,
                                 columnNumber: 38
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                 children: identical.length
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 273,
+                                lineNumber: 274,
                                 columnNumber: 60
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 273,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "readout-row",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                children: "HIGH OVERLAP"
-                            }, void 0, false, {
-                                fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 274,
-                                columnNumber: 38
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                children: high.length
-                            }, void 0, false, {
-                                fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 274,
-                                columnNumber: 63
                             }, this)
                         ]
                     }, void 0, true, {
@@ -1883,18 +1862,18 @@ function SamplingDiagnostics({ sampling }) {
                         className: "readout-row",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                children: "PARTIAL OVERLAP"
+                                children: "HIGH OVERLAP"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                 lineNumber: 275,
                                 columnNumber: 38
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                children: partial.length
+                                children: high.length
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                 lineNumber: 275,
-                                columnNumber: 66
+                                columnNumber: 63
                             }, this)
                         ]
                     }, void 0, true, {
@@ -1906,14 +1885,14 @@ function SamplingDiagnostics({ sampling }) {
                         className: "readout-row",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                children: "NON-OVERLAPPING"
+                                children: "PARTIAL OVERLAP"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                 lineNumber: 276,
                                 columnNumber: 38
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                children: none.length
+                                children: partial.length
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                 lineNumber: 276,
@@ -1925,24 +1904,47 @@ function SamplingDiagnostics({ sampling }) {
                         lineNumber: 276,
                         columnNumber: 9
                     }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "readout-row",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                children: "NON-OVERLAPPING"
+                            }, void 0, false, {
+                                fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
+                                lineNumber: 277,
+                                columnNumber: 38
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
+                                children: none.length
+                            }, void 0, false, {
+                                fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
+                                lineNumber: 277,
+                                columnNumber: 66
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
+                        lineNumber: 277,
+                        columnNumber: 9
+                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "chart-note",
                         children: "Identical windows give TMSI = 100 (self-control). High overlap inflates similarity. Only non-overlapping comparisons are independent observations."
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 277,
+                        lineNumber: 278,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 271,
+                lineNumber: 272,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-        lineNumber: 262,
+        lineNumber: 263,
         columnNumber: 5
     }, this);
 }
@@ -1956,7 +1958,7 @@ function InterpretationSafeguards() {
                 children: "WHAT TMSI MEASURES"
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 289,
+                lineNumber: 290,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1967,20 +1969,20 @@ function InterpretationSafeguards() {
                         children: "MEASURES"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 291,
+                        lineNumber: 292,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         children: "Pairwise terrain-window morphology similarity (elevation distribution statistics for slope, local relief, and terrain ruggedness)."
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 292,
+                        lineNumber: 293,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 290,
+                lineNumber: 291,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1991,20 +1993,20 @@ function InterpretationSafeguards() {
                         children: "DOES NOT ESTABLISH"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 295,
+                        lineNumber: 296,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         children: "Planetary-body similarity, habitability, landing safety, or geological equivalence."
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 296,
+                        lineNumber: 297,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 294,
+                lineNumber: 295,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2015,20 +2017,20 @@ function InterpretationSafeguards() {
                         children: "DEPENDS ON"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 299,
+                        lineNumber: 300,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         children: "Spatial extent, window location, overlap fraction, feature weights, and effective resolution."
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 300,
+                        lineNumber: 301,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 298,
+                lineNumber: 299,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2039,26 +2041,26 @@ function InterpretationSafeguards() {
                         children: "LIMITATION"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 303,
+                        lineNumber: 304,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         children: "Within-body TMSI range (Moon: 29.27-94.10; Mars: 40.99-90.90) overlaps the between-body range (22.38-90.60). TMSI cannot establish planetary identity."
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 304,
+                        lineNumber: 305,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 302,
+                lineNumber: 303,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-        lineNumber: 288,
+        lineNumber: 289,
         columnNumber: 5
     }, this);
 }
@@ -2084,25 +2086,25 @@ function BenchmarkingView({ benchmark }) {
                             children: "DATASET INVENTORY"
                         }, void 0, false, {
                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                            lineNumber: 325,
+                            lineNumber: 326,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             children: "Verified planetary datasets"
                         }, void 0, false, {
                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                            lineNumber: 326,
+                            lineNumber: 327,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                    lineNumber: 324,
+                    lineNumber: 325,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 323,
+                lineNumber: 324,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2118,14 +2120,14 @@ function BenchmarkingView({ benchmark }) {
                                             children: d.body
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                            lineNumber: 334,
+                                            lineNumber: 335,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                             children: d.name
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                            lineNumber: 335,
+                                            lineNumber: 336,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dl", {
@@ -2134,21 +2136,21 @@ function BenchmarkingView({ benchmark }) {
                                                     children: "RESOLUTION"
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 337,
+                                                    lineNumber: 338,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
                                                     children: d.nominal_resolution || "N/A"
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 338,
+                                                    lineNumber: 339,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dt", {
                                                     children: "VALIDATION"
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 339,
+                                                    lineNumber: 340,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
@@ -2157,62 +2159,62 @@ function BenchmarkingView({ benchmark }) {
                                                         children: d.validation_status || d.access_status
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                        lineNumber: 341,
+                                                        lineNumber: 342,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 340,
+                                                    lineNumber: 341,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dt", {
                                                     children: "ACCESS"
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 353,
+                                                    lineNumber: 354,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
                                                     children: d.access_status || "N/A"
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 354,
+                                                    lineNumber: 355,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dt", {
                                                     children: "KIND"
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 355,
+                                                    lineNumber: 356,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
                                                     children: d.kind || "N/A"
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 356,
+                                                    lineNumber: 357,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                            lineNumber: 336,
+                                            lineNumber: 337,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, d.id, true, {
                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                    lineNumber: 333,
+                                    lineNumber: 334,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                            lineNumber: 331,
+                            lineNumber: 332,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 330,
+                        lineNumber: 331,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2222,7 +2224,7 @@ function BenchmarkingView({ benchmark }) {
                                 children: "PLANETARY COVERAGE"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 364,
+                                lineNumber: 365,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2232,7 +2234,7 @@ function BenchmarkingView({ benchmark }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 365,
+                                lineNumber: 366,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dl", {
@@ -2246,33 +2248,33 @@ function BenchmarkingView({ benchmark }) {
                                                 children: body
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 372,
+                                                lineNumber: 373,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dt", {
                                                 children: "DATASETS"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 373,
+                                                lineNumber: 374,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
                                                 children: count
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 373,
+                                                lineNumber: 374,
                                                 columnNumber: 38
                                             }, this)
                                         ]
                                     }, body, true, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 371,
+                                        lineNumber: 372,
                                         columnNumber: 19
                                     }, this);
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 366,
+                                lineNumber: 367,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2280,13 +2282,13 @@ function BenchmarkingView({ benchmark }) {
                                 children: "Moon and Mars datasets are VALIDATED and fully accessible. Earth (earth_nasadem_hgt_v001) is BLOCKED by NASA Earthdata authentication (HTTP 401). No independent DEM benchmark pair exists in the current repository."
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 379,
+                                lineNumber: 380,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 363,
+                        lineNumber: 364,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2296,14 +2298,14 @@ function BenchmarkingView({ benchmark }) {
                                 children: "BENCHMARKING STATUS"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 387,
+                                lineNumber: 388,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                 children: "Independent dataset comparison"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 388,
+                                lineNumber: 389,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2311,7 +2313,7 @@ function BenchmarkingView({ benchmark }) {
                                 children: limitation
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 389,
+                                lineNumber: 390,
                                 columnNumber: 11
                             }, this),
                             realBenchmarkFindings.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2319,36 +2321,36 @@ function BenchmarkingView({ benchmark }) {
                                         children: f
                                     }, i, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 394,
+                                        lineNumber: 395,
                                         columnNumber: 68
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 393,
+                                lineNumber: 394,
                                 columnNumber: 13
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: "No completed independent benchmark available."
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 397,
+                                lineNumber: 398,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 386,
+                        lineNumber: 387,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 329,
+                lineNumber: 330,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-        lineNumber: 322,
+        lineNumber: 323,
         columnNumber: 5
     }, this);
 }
@@ -2382,20 +2384,20 @@ function ExploreView({ layer, setLayer, terrainDataset, setTerrainDataset, explo
                                 children: "EXPLORE"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 417,
+                                lineNumber: 418,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 children: "Terrain visualization — interactive 2D & 3D"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 418,
+                                lineNumber: 419,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 416,
+                        lineNumber: 417,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2408,18 +2410,18 @@ function ExploreView({ layer, setLayer, terrainDataset, setTerrainDataset, explo
                                 children: d.label
                             }, d.id, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 422,
+                                lineNumber: 423,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 420,
+                        lineNumber: 421,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 415,
+                lineNumber: 416,
                 columnNumber: 7
             }, this),
             exploreContextId && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2434,14 +2436,14 @@ function ExploreView({ layer, setLayer, terrainDataset, setTerrainDataset, explo
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 428,
+                        lineNumber: 429,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         children: exploreContextId === "death_valley" ? "Earth explorer — Death Valley (Southern California, USA). Dataset: USGS 3DEP 1-arc-second (n37w117), processed to a 20 m UTM grid. Native source resolution ~29.3 m; NAVD88 vertical datum; geographic coverage limited to the acquired tile; not global terrestrial terrain." : "This candidate has no verified local terrain preview. Showing Moon LOLA as a reference dataset — no Earth raster is available for this candidate, by design; Earth DEM acquisition remains limited by NASA Earthdata HTTP 401 and USGS tiles cover only two locations."
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 429,
+                        lineNumber: 430,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2451,13 +2453,13 @@ function ExploreView({ layer, setLayer, terrainDataset, setTerrainDataset, explo
                         children: "CLEAR CANDIDATE CONTEXT"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 434,
+                        lineNumber: 435,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 427,
+                lineNumber: 428,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2469,15 +2471,15 @@ function ExploreView({ layer, setLayer, terrainDataset, setTerrainDataset, explo
                             datasetId: terrainDataset,
                             layer: layer,
                             onLayerChange: setLayer,
-                            gridUrl: terrainDataset === "usgs_3dep_death_valley" ? (l)=>`http://localhost:8000/api/candidates/terrain-grid/death_valley?layer=${encodeURIComponent(l)}&max_dim=192` : undefined
+                            gridUrl: terrainDataset === "usgs_3dep_death_valley" ? (l)=>`${__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["apiUrl"]}/api/candidates/terrain-grid/death_valley?layer=${encodeURIComponent(l)}&max_dim=192` : undefined
                         }, void 0, false, {
                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                            lineNumber: 439,
+                            lineNumber: 440,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 438,
+                        lineNumber: 439,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2491,14 +2493,14 @@ function ExploreView({ layer, setLayer, terrainDataset, setTerrainDataset, explo
                                         children: "HOW TO USE"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 443,
+                                        lineNumber: 444,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                         children: "Interactive controls"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 444,
+                                        lineNumber: 445,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2507,26 +2509,10 @@ function ExploreView({ layer, setLayer, terrainDataset, setTerrainDataset, explo
                                                 children: "2D MAP"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 445,
-                                                columnNumber: 16
-                                            }, this),
-                                            " — drag to pan, mouse-wheel or −/+ to zoom, coordinate readout follows the cursor, switch ramps and display range live."
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 445,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                children: "3D TERRAIN"
-                                            }, void 0, false, {
-                                                fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                                 lineNumber: 446,
                                                 columnNumber: 16
                                             }, this),
-                                            " — drag to orbit, scroll or pinch to zoom, right-drag to pan. Vertical exaggeration slider scales terrain relief."
+                                            " — drag to pan, mouse-wheel or −/+ to zoom, coordinate readout follows the cursor, switch ramps and display range live."
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
@@ -2536,23 +2522,39 @@ function ExploreView({ layer, setLayer, terrainDataset, setTerrainDataset, explo
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                children: "LAYERS"
+                                                children: "3D TERRAIN"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                                 lineNumber: 447,
+                                                columnNumber: 16
+                                            }, this),
+                                            " — drag to orbit, scroll or pinch to zoom, right-drag to pan. Vertical exaggeration slider scales terrain relief."
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
+                                        lineNumber: 447,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                children: "LAYERS"
+                                            }, void 0, false, {
+                                                fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
+                                                lineNumber: 448,
                                                 columnNumber: 16
                                             }, this),
                                             " — Elevation · Hillshade · Slope · Local relief · Terrain ruggedness. Switching layers refetches the downsampled grid."
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 447,
+                                        lineNumber: 448,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 442,
+                                lineNumber: 443,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2563,14 +2565,14 @@ function ExploreView({ layer, setLayer, terrainDataset, setTerrainDataset, explo
                                         children: "VALIDATED DATASETS"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 450,
+                                        lineNumber: 451,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                         children: "Planetary inputs"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 451,
+                                        lineNumber: 452,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2580,38 +2582,15 @@ function ExploreView({ layer, setLayer, terrainDataset, setTerrainDataset, explo
                                                 children: "MOON LOLA"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 452,
+                                                lineNumber: 453,
                                                 columnNumber: 42
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                                 children: "20 m/pixel"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 452,
+                                                lineNumber: 453,
                                                 columnNumber: 64
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 452,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "readout-row",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                children: "MARS JEZERO CTX DTM"
-                                            }, void 0, false, {
-                                                fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 453,
-                                                columnNumber: 42
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                                children: "20 m/pixel"
-                                            }, void 0, false, {
-                                                fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 453,
-                                                columnNumber: 74
                                             }, this)
                                         ]
                                     }, void 0, true, {
@@ -2623,18 +2602,18 @@ function ExploreView({ layer, setLayer, terrainDataset, setTerrainDataset, explo
                                         className: "readout-row",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                children: "EARTH 3DEP (DEATH VALLEY)"
+                                                children: "MARS JEZERO CTX DTM"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                                 lineNumber: 454,
                                                 columnNumber: 42
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                                children: "20 m grid · ~29.3 m native"
+                                                children: "20 m/pixel"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                                 lineNumber: 454,
-                                                columnNumber: 80
+                                                columnNumber: 74
                                             }, this)
                                         ]
                                     }, void 0, true, {
@@ -2646,19 +2625,18 @@ function ExploreView({ layer, setLayer, terrainDataset, setTerrainDataset, explo
                                         className: "readout-row",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                children: "EARTH NASADEM"
+                                                children: "EARTH 3DEP (DEATH VALLEY)"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                                 lineNumber: 455,
                                                 columnNumber: 42
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                                className: "muted-value",
-                                                children: "BLOCKED — HTTP 401"
+                                                children: "20 m grid · ~29.3 m native"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                                 lineNumber: 455,
-                                                columnNumber: 68
+                                                columnNumber: 80
                                             }, this)
                                         ]
                                     }, void 0, true, {
@@ -2666,36 +2644,60 @@ function ExploreView({ layer, setLayer, terrainDataset, setTerrainDataset, explo
                                         lineNumber: 455,
                                         columnNumber: 13
                                     }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "readout-row",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                children: "EARTH NASADEM"
+                                            }, void 0, false, {
+                                                fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
+                                                lineNumber: 456,
+                                                columnNumber: 42
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
+                                                className: "muted-value",
+                                                children: "BLOCKED — HTTP 401"
+                                            }, void 0, false, {
+                                                fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
+                                                lineNumber: 456,
+                                                columnNumber: 68
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
+                                        lineNumber: 456,
+                                        columnNumber: 13
+                                    }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "chart-note",
                                         children: "Earth terrain is limited to two USGS 3DEP tiles (Death Valley / southern Arizona) from open-access USGS S3 sources. NASADEM (global) is blocked by NASA Earthdata HTTP 401; Moon/Mars datasets are unchanged."
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 456,
+                                        lineNumber: 457,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 449,
+                                lineNumber: 450,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 441,
+                        lineNumber: 442,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 437,
+                lineNumber: 438,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-        lineNumber: 414,
+        lineNumber: 415,
         columnNumber: 5
     }, this);
 }
@@ -2721,25 +2723,25 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                             children: "COMPARE"
                         }, void 0, false, {
                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                            lineNumber: 478,
+                            lineNumber: 479,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             children: "Moon vs Mars — feature comparison workspace"
                         }, void 0, false, {
                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                            lineNumber: 479,
+                            lineNumber: 480,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                    lineNumber: 477,
+                    lineNumber: 478,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 476,
+                lineNumber: 477,
                 columnNumber: 7
             }, this),
             compareCandidateId && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2751,7 +2753,7 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                         children: "EARTH CANDIDATE — COMPARISON UNAVAILABLE"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 484,
+                        lineNumber: 485,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2761,14 +2763,14 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                 children: compareCandidateId
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 486,
+                                lineNumber: 487,
                                 columnNumber: 23
                             }, this),
                             " cannot enter the quantitative Earth–Moon / Earth–Mars comparison workflow. Earth comparisons require an authentic, processed Earth DEM measured at the comparison scale; acquisition of the global NASADEM product is blocked by NASA Earthdata HTTP 401, and only two USGS 3DEP tiles have been locally acquired and processed. No similarity score is computed or displayed for this candidate."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 485,
+                        lineNumber: 486,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2779,7 +2781,7 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                 children: "not independently validated"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 491,
+                                lineNumber: 492,
                                 columnNumber: 202
                             }, this),
                             " and ",
@@ -2787,14 +2789,14 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                 children: "not candidate-specific"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 491,
+                                lineNumber: 492,
                                 columnNumber: 241
                             }, this),
                             ". Earth coverage is two USGS tiles; NASADEM (global) remains blocked by HTTP 401."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 491,
+                        lineNumber: 492,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2804,13 +2806,13 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                         children: "VIEW MOON↔MARS EXPERIMENT"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 492,
+                        lineNumber: 493,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 483,
+                lineNumber: 484,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2823,7 +2825,7 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                         children: "LAYER"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 496,
+                        lineNumber: 497,
                         columnNumber: 9
                     }, this),
                     [
@@ -2838,7 +2840,7 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                             children: feat.replace(/_/g, " ")
                         }, feat, false, {
                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                            lineNumber: 498,
+                            lineNumber: 499,
                             columnNumber: 11
                         }, this)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2846,13 +2848,13 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                         children: "STORED EXPERIMENT: MOON → MARS (JEZERO CTX DTM vs LOLA)"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 500,
+                        lineNumber: 501,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 495,
+                lineNumber: 496,
                 columnNumber: 7
             }, this),
             !hasExperiment ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2863,14 +2865,14 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                         children: "EXPERIMENT DATA UNAVAILABLE"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 505,
+                        lineNumber: 506,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         children: "Stored moon–mars experiment results not loaded"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 506,
+                        lineNumber: 507,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2880,14 +2882,14 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                 children: "GET /api/similarity/results"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 507,
+                                lineNumber: 508,
                                 columnNumber: 94
                             }, this),
                             ") or the backend is not running. The comparison workspace requires the authenticated experiment artifact to display feature statistics."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 507,
+                        lineNumber: 508,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2897,7 +2899,7 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                 children: "uvicorn app.main:app --reload"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 508,
+                                lineNumber: 509,
                                 columnNumber: 33
                             }, this),
                             " inside ",
@@ -2905,28 +2907,28 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                 children: "backend/"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 508,
+                                lineNumber: 509,
                                 columnNumber: 83
                             }, this),
                             ") or verify ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("code", {
-                                children: "http://localhost:8000/api/similarity/results"
+                                children: "/api/similarity/results"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 508,
+                                lineNumber: 509,
                                 columnNumber: 116
                             }, this),
                             " returns HTTP 200."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 508,
+                        lineNumber: 509,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 504,
+                lineNumber: 505,
                 columnNumber: 9
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                 children: [
@@ -2944,7 +2946,7 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                                 children: "TARGET · MARS JEZERO CTX DTM"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 514,
+                                                lineNumber: 515,
                                                 columnNumber: 51
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2952,13 +2954,13 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                                 children: "MARS · 20 m/pixel"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 514,
+                                                lineNumber: 515,
                                                 columnNumber: 112
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 514,
+                                        lineNumber: 515,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2966,7 +2968,7 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                         alt: "Mars Jezero CTX DTM feature preview"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 515,
+                                        lineNumber: 516,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("figcaption", {
@@ -2976,13 +2978,13 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 516,
+                                        lineNumber: 517,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 513,
+                                lineNumber: 514,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("figure", {
@@ -2996,7 +2998,7 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                                 children: "CANDIDATE · MOON LOLA"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 519,
+                                                lineNumber: 520,
                                                 columnNumber: 51
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3004,13 +3006,13 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                                 children: "MOON · 20 m/pixel"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 519,
+                                                lineNumber: 520,
                                                 columnNumber: 105
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 519,
+                                        lineNumber: 520,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -3018,7 +3020,7 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                         alt: "Moon LOLA feature preview"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 520,
+                                        lineNumber: 521,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("figcaption", {
@@ -3028,19 +3030,19 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 521,
+                                        lineNumber: 522,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 518,
+                                lineNumber: 519,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 512,
+                        lineNumber: 513,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3054,34 +3056,34 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                         children: "SIMILARITY INDEX (TMSI)"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 527,
+                                        lineNumber: 528,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                         children: baseline?.similarity_index?.toFixed(2)
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 528,
+                                        lineNumber: 529,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
                                         children: bootstrap ? `95% CI ${bootstrap.tmsi_lower_95.toFixed(2)} – ${bootstrap.tmsi_upper_95.toFixed(2)} · ${bootstrap.repetitions} reps · block ${bootstrap.block_size_m} m` : "Bootstrap CI unavailable"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 529,
+                                        lineNumber: 530,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "Moon–Mars morphology similarity; not a planetary-body classification."
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 530,
+                                        lineNumber: 531,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 526,
+                                lineNumber: 527,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3092,14 +3094,14 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                         children: "KOLOMOGOROV–SMIRNOV"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 533,
+                                        lineNumber: 534,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                         children: activeData?.distance?.ks_statistic?.toFixed(3)
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 534,
+                                        lineNumber: 535,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
@@ -3109,20 +3111,20 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 535,
+                                        lineNumber: 536,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "Distribution separation: 0 identical → 1 completely disjoint."
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 536,
+                                        lineNumber: 537,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 532,
+                                lineNumber: 533,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3133,14 +3135,14 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                         children: "WASSERSTEIN DISTANCE"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 539,
+                                        lineNumber: 540,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                         children: activeData?.distance?.wasserstein?.toFixed(3)
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 540,
+                                        lineNumber: 541,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
@@ -3152,20 +3154,20 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 541,
+                                        lineNumber: 542,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "Earth-mover distance between the feature distributions."
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 542,
+                                        lineNumber: 543,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 538,
+                                lineNumber: 539,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3176,7 +3178,7 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                         children: "CLOSEST / FURTHEST"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 545,
+                                        lineNumber: 546,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
@@ -3190,7 +3192,7 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 546,
+                                        lineNumber: 547,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
@@ -3200,26 +3202,26 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 547,
+                                        lineNumber: 548,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "Feature-level nearest and furthest distances."
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 548,
+                                        lineNumber: 549,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 544,
+                                lineNumber: 545,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 525,
+                        lineNumber: 526,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3245,7 +3247,7 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                                 children: feat.replace(/_/g, " ")
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 562,
+                                                lineNumber: 563,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3256,13 +3258,13 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 563,
+                                                lineNumber: 564,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 561,
+                                        lineNumber: 562,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3276,7 +3278,7 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                                         children: "MARS"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                        lineNumber: 567,
+                                                        lineNumber: 568,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3292,25 +3294,25 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                            lineNumber: 569,
+                                                            lineNumber: 570,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                        lineNumber: 568,
+                                                        lineNumber: 569,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                                         children: f.target_summary.median.toFixed(2)
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                        lineNumber: 571,
+                                                        lineNumber: 572,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 566,
+                                                lineNumber: 567,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3321,7 +3323,7 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                                         children: "MOON"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                        lineNumber: 574,
+                                                        lineNumber: 575,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3337,31 +3339,31 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                            lineNumber: 576,
+                                                            lineNumber: 577,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                        lineNumber: 575,
+                                                        lineNumber: 576,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                                         children: f.candidate_summary.median.toFixed(2)
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                        lineNumber: 578,
+                                                        lineNumber: 579,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 573,
+                                                lineNumber: 574,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 565,
+                                        lineNumber: 566,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3369,19 +3371,19 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                         children: "Boxes show Q25–Q75; ticks show medians. Jezero (target) vs LOLA south pole (candidate)."
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 581,
+                                        lineNumber: 582,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, feat, true, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 560,
+                                lineNumber: 561,
                                 columnNumber: 17
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 552,
+                        lineNumber: 553,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3396,81 +3398,81 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                                 children: "Feature"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 590,
+                                                lineNumber: 591,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 children: "Mars μ"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 590,
+                                                lineNumber: 591,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 children: "Moon μ"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 590,
+                                                lineNumber: 591,
                                                 columnNumber: 52
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 children: "Mars median"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 590,
+                                                lineNumber: 591,
                                                 columnNumber: 67
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 children: "Moon median"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 590,
+                                                lineNumber: 591,
                                                 columnNumber: 87
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 children: "Mars σ"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 590,
+                                                lineNumber: 591,
                                                 columnNumber: 107
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 children: "Moon σ"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 590,
+                                                lineNumber: 591,
                                                 columnNumber: 122
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 children: "Mars IQR"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 590,
+                                                lineNumber: 591,
                                                 columnNumber: 137
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 children: "Moon IQR"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 590,
+                                                lineNumber: 591,
                                                 columnNumber: 154
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 children: "Samples (T / C)"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 590,
+                                                lineNumber: 591,
                                                 columnNumber: 171
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 590,
+                                        lineNumber: 591,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                    lineNumber: 589,
+                                    lineNumber: 590,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -3488,63 +3490,63 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                                     children: feat.replace(/_/g, " ")
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 598,
+                                                    lineNumber: 599,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     children: f.target_summary.mean.toFixed(2)
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 599,
+                                                    lineNumber: 600,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     children: f.candidate_summary.mean.toFixed(2)
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 600,
+                                                    lineNumber: 601,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     children: f.target_summary.median.toFixed(2)
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 601,
+                                                    lineNumber: 602,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     children: f.candidate_summary.median.toFixed(2)
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 602,
+                                                    lineNumber: 603,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     children: f.target_summary.std.toFixed(2)
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 603,
+                                                    lineNumber: 604,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     children: f.candidate_summary.std.toFixed(2)
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 604,
+                                                    lineNumber: 605,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     children: (f.target_summary.q75 - f.target_summary.q25).toFixed(2)
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 605,
+                                                    lineNumber: 606,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     children: (f.candidate_summary.q75 - f.candidate_summary.q25).toFixed(2)
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 606,
+                                                    lineNumber: 607,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -3555,42 +3557,42 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 607,
+                                                    lineNumber: 608,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
                                         }, feat, true, {
                                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                            lineNumber: 597,
+                                            lineNumber: 598,
                                             columnNumber: 21
                                         }, this);
                                     })
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                    lineNumber: 592,
+                                    lineNumber: 593,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                            lineNumber: 588,
+                            lineNumber: 589,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 587,
+                        lineNumber: 588,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 511,
+                lineNumber: 512,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-        lineNumber: 475,
+        lineNumber: 476,
         columnNumber: 5
     }, this);
 }
@@ -3612,25 +3614,25 @@ function ReliabilityView({ sampling, experiment }) {
                             children: "RELIABILITY"
                         }, void 0, false, {
                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                            lineNumber: 629,
+                            lineNumber: 630,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             children: "Bootstrap confidence and sensitivity"
                         }, void 0, false, {
                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                            lineNumber: 630,
+                            lineNumber: 631,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                    lineNumber: 628,
+                    lineNumber: 629,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 627,
+                lineNumber: 628,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3647,7 +3649,7 @@ function ReliabilityView({ sampling, experiment }) {
                                             children: "BOOTSTRAP 95% CI"
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                            lineNumber: 638,
+                                            lineNumber: 639,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3660,7 +3662,7 @@ function ReliabilityView({ sampling, experiment }) {
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 640,
+                                                    lineNumber: 641,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
@@ -3669,13 +3671,13 @@ function ReliabilityView({ sampling, experiment }) {
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 641,
+                                                    lineNumber: 642,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                            lineNumber: 639,
+                                            lineNumber: 640,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3685,7 +3687,7 @@ function ReliabilityView({ sampling, experiment }) {
                                                     children: "0"
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 644,
+                                                    lineNumber: 645,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3696,20 +3698,20 @@ function ReliabilityView({ sampling, experiment }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 645,
+                                                    lineNumber: 646,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: "100"
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 646,
+                                                    lineNumber: 647,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                            lineNumber: 643,
+                                            lineNumber: 644,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3718,7 +3720,7 @@ function ReliabilityView({ sampling, experiment }) {
                                                     children: "Bootstrap 95% CI"
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 648,
+                                                    lineNumber: 649,
                                                     columnNumber: 20
                                                 }, this),
                                                 ": ",
@@ -3737,13 +3739,13 @@ function ReliabilityView({ sampling, experiment }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                            lineNumber: 648,
+                                            lineNumber: 649,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                    lineNumber: 637,
+                                    lineNumber: 638,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3757,7 +3759,7 @@ function ReliabilityView({ sampling, experiment }) {
                                             children: "UNCERTAINTY DIAGNOSTICS"
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                            lineNumber: 651,
+                                            lineNumber: 652,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3767,38 +3769,15 @@ function ReliabilityView({ sampling, experiment }) {
                                                     children: "SEED SENSITIVITY"
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 652,
+                                                    lineNumber: 653,
                                                     columnNumber: 46
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                                     children: seedRanges.length ? `${Math.min(...seedRanges).toFixed(2)} – ${Math.max(...seedRanges).toFixed(2)} TMSI mean range` : "—"
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 652,
+                                                    lineNumber: 653,
                                                     columnNumber: 75
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                            lineNumber: 652,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "readout-row",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    children: "MORAN'S I (MOON, SLOPE)"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 653,
-                                                    columnNumber: 46
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                                    children: spatial?.morans_i !== undefined ? spatial.morans_i.toFixed(3) + " — strong spatial autocorrelation" : "—"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 653,
-                                                    columnNumber: 82
                                                 }, this)
                                             ]
                                         }, void 0, true, {
@@ -3810,18 +3789,18 @@ function ReliabilityView({ sampling, experiment }) {
                                             className: "readout-row",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    children: "EXTENT SENSITIVITY"
+                                                    children: "MORAN'S I (MOON, SLOPE)"
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                                     lineNumber: 654,
                                                     columnNumber: 46
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                                    children: "23.71 @ 5.12 km → 49.92 @ 10.24 km"
+                                                    children: spatial?.morans_i !== undefined ? spatial.morans_i.toFixed(3) + " — strong spatial autocorrelation" : "—"
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                                     lineNumber: 654,
-                                                    columnNumber: 77
+                                                    columnNumber: 82
                                                 }, this)
                                             ]
                                         }, void 0, true, {
@@ -3829,24 +3808,47 @@ function ReliabilityView({ sampling, experiment }) {
                                             lineNumber: 654,
                                             columnNumber: 17
                                         }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "readout-row",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    children: "EXTENT SENSITIVITY"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
+                                                    lineNumber: 655,
+                                                    columnNumber: 46
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
+                                                    children: "23.71 @ 5.12 km → 49.92 @ 10.24 km"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
+                                                    lineNumber: 655,
+                                                    columnNumber: 77
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
+                                            lineNumber: 655,
+                                            columnNumber: 17
+                                        }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "chart-note",
                                             children: "Intervals quantify spatial sampling variability under the stated block-size assumption; they are not calibrated probabilities or measurement error bars."
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                            lineNumber: 655,
+                                            lineNumber: 656,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                    lineNumber: 650,
+                                    lineNumber: 651,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                            lineNumber: 636,
+                            lineNumber: 637,
                             columnNumber: 13
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "side-card",
@@ -3856,25 +3858,25 @@ function ReliabilityView({ sampling, experiment }) {
                                     children: "BOOTSTRAP UNAVAILABLE"
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                    lineNumber: 660,
+                                    lineNumber: 661,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: "Bootstrap uncertainty data is unavailable from the backend (not connected, or API offline). Run the similarity experiment pipeline to generate primary_bootstrap_320m_1000."
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                    lineNumber: 661,
+                                    lineNumber: 662,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                            lineNumber: 659,
+                            lineNumber: 660,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 634,
+                        lineNumber: 635,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3884,20 +3886,20 @@ function ReliabilityView({ sampling, experiment }) {
                                     sampling: sampling
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                    lineNumber: 668,
+                                    lineNumber: 669,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SamplingDiagnostics, {
                                     sampling: sampling
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                    lineNumber: 669,
+                                    lineNumber: 670,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                            lineNumber: 667,
+                            lineNumber: 668,
                             columnNumber: 13
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "side-card",
@@ -3907,7 +3909,7 @@ function ReliabilityView({ sampling, experiment }) {
                                     children: "SAMPLING FRAMEWORK UNAVAILABLE"
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                    lineNumber: 673,
+                                    lineNumber: 674,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3917,37 +3919,37 @@ function ReliabilityView({ sampling, experiment }) {
                                             children: "phase11_sampling_framework.json"
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                            lineNumber: 674,
+                                            lineNumber: 675,
                                             columnNumber: 111
                                         }, this),
                                         " missing)."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                    lineNumber: 674,
+                                    lineNumber: 675,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                            lineNumber: 672,
+                            lineNumber: 673,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 665,
+                        lineNumber: 666,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 633,
+                lineNumber: 634,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-        lineNumber: 626,
+        lineNumber: 627,
         columnNumber: 5
     }, this);
 }
@@ -4015,25 +4017,25 @@ function DataMethodsView({ benchmark, experiment }) {
                             children: "DATA & METHODS"
                         }, void 0, false, {
                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                            lineNumber: 739,
+                            lineNumber: 740,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             children: "Dataset inventory and scientific methodology"
                         }, void 0, false, {
                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                            lineNumber: 740,
+                            lineNumber: 741,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                    lineNumber: 738,
+                    lineNumber: 739,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 737,
+                lineNumber: 738,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4044,7 +4046,7 @@ function DataMethodsView({ benchmark, experiment }) {
                         children: "DATASET EXPLORER"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 745,
+                        lineNumber: 746,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4064,20 +4066,20 @@ function DataMethodsView({ benchmark, experiment }) {
                                                 children: d.body
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 755,
+                                                lineNumber: 756,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                 children: d.name
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 756,
+                                                lineNumber: 757,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 754,
+                                        lineNumber: 755,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4090,35 +4092,11 @@ function DataMethodsView({ benchmark, experiment }) {
                                                         children: "RESOLUTION"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                        lineNumber: 759,
-                                                        columnNumber: 51
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                                        children: d.nominal_resolution || "unknown"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                        lineNumber: 759,
-                                                        columnNumber: 74
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 759,
-                                                columnNumber: 19
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "dataset-metric",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        children: "VALIDATION"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                                         lineNumber: 760,
                                                         columnNumber: 51
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                                        className: d.validation_status === "VALIDATED" ? "ok" : "blocked",
-                                                        children: d.validation_status
+                                                        children: d.nominal_resolution || "unknown"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                                         lineNumber: 760,
@@ -4134,29 +4112,53 @@ function DataMethodsView({ benchmark, experiment }) {
                                                 className: "dataset-metric",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        children: "ACCESS"
+                                                        children: "VALIDATION"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                                         lineNumber: 761,
                                                         columnNumber: 51
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                                        children: d.access_status
+                                                        className: d.validation_status === "VALIDATED" ? "ok" : "blocked",
+                                                        children: d.validation_status
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                                         lineNumber: 761,
-                                                        columnNumber: 70
+                                                        columnNumber: 74
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                                 lineNumber: 761,
                                                 columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "dataset-metric",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        children: "ACCESS"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
+                                                        lineNumber: 762,
+                                                        columnNumber: 51
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
+                                                        children: d.access_status
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
+                                                        lineNumber: 762,
+                                                        columnNumber: 70
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
+                                                lineNumber: 762,
+                                                columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 758,
+                                        lineNumber: 759,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4164,19 +4166,19 @@ function DataMethodsView({ benchmark, experiment }) {
                                         children: d.body === "Moon" ? "South-polar window; bounded subset, not complete LOLA product. Effective resolution documented at ~16 m." : d.body === "Mars" ? "Jezero-specific MOLA DTM; valid for localized benchmarking, not global Mars. Equirectangular CRS preserved." : "Earth candidates are limited to two USGS 3DEP tiles (Death Valley / southern Arizona). Not representative of global terrestrial terrain."
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 763,
+                                        lineNumber: 764,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, d.id, true, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 753,
+                                lineNumber: 754,
                                 columnNumber: 15
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 746,
+                        lineNumber: 747,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4187,40 +4189,40 @@ function DataMethodsView({ benchmark, experiment }) {
                                 children: "PROVENANCE"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 769,
+                                lineNumber: 770,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: "Moon: NASA GSFC Planetary Geodesy and Altimetry Data Archive · https://pgda.gsfc.nasa.gov/products/90 · DOI 10.60903/gsfcpgda-lola-spole"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 770,
+                                lineNumber: 771,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: "Mars: USGS Astrogeology Science Center · https://astrogeology.usgs.gov/search/map/mars_2020_terrain_relative_navigation_ctx_dtm_mosaic"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 771,
+                                lineNumber: 772,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: "Earth: USGS 3DEP 1-arc-second · open access via USGS S3 · NAVD88 vertical datum (unquantified difference vs LOLA/MOLA)"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 772,
+                                lineNumber: 773,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 768,
+                        lineNumber: 769,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 744,
+                lineNumber: 745,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4231,14 +4233,14 @@ function DataMethodsView({ benchmark, experiment }) {
                         children: "METHODOLOGY EXPLORER"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 777,
+                        lineNumber: 778,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         children: "TMSI — how it works, step by step"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 778,
+                        lineNumber: 779,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4255,7 +4257,7 @@ function DataMethodsView({ benchmark, experiment }) {
                                                 children: step.title
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 783,
+                                                lineNumber: 784,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4263,13 +4265,13 @@ function DataMethodsView({ benchmark, experiment }) {
                                                 children: openStep === step.id ? "−" : "+"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 784,
+                                                lineNumber: 785,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 782,
+                                        lineNumber: 783,
                                         columnNumber: 15
                                     }, this),
                                     openStep === step.id && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4278,29 +4280,29 @@ function DataMethodsView({ benchmark, experiment }) {
                                             children: step.body
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                            lineNumber: 786,
+                                            lineNumber: 787,
                                             columnNumber: 74
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 786,
+                                        lineNumber: 787,
                                         columnNumber: 40
                                     }, this)
                                 ]
                             }, step.id, true, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 781,
+                                lineNumber: 782,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 779,
+                        lineNumber: 780,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 776,
+                lineNumber: 777,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4311,7 +4313,7 @@ function DataMethodsView({ benchmark, experiment }) {
                         children: "RESEARCH RESULTS — INDEPENDENTLY VERIFIED"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 793,
+                        lineNumber: 794,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4325,34 +4327,34 @@ function DataMethodsView({ benchmark, experiment }) {
                                         children: "MOON ↔ MARS"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 796,
+                                        lineNumber: 797,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                         children: moonMars?.similarity_index?.toFixed(2) ?? "49.92"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 797,
+                                        lineNumber: 798,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "TMSI ≈ 49.92 · 95% CI 42.59 – 57.15 · 1,000 reps · block 320 m · seed 42"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 798,
+                                        lineNumber: 799,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
                                         children: "Moon and Mars terrain-morphology distributions are partially similar, but TMSI cannot establish planetary-body identity. Bootstrap CI bounds reflect spatial sampling variability (Moran’s I ≈ 0.979), not measurement error."
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 799,
+                                        lineNumber: 800,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 795,
+                                lineNumber: 796,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -4363,34 +4365,34 @@ function DataMethodsView({ benchmark, experiment }) {
                                         children: "EARTH ↔ MOON"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 802,
+                                        lineNumber: 803,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                         children: "61.95"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 803,
+                                        lineNumber: 804,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "TMSI ≈ 61.95 · 95% CI 51.99 – 72.56 · Conditionally ready (Earth DEM ~29.3 m effective; NAVD88 vs LOLA; single US region)"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 804,
+                                        lineNumber: 805,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
                                         children: "Death Valley / southern Arizona region vs lunar south-polar window. Characterizes the sampled region only — not global terrestrial terrain."
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 805,
+                                        lineNumber: 806,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 801,
+                                lineNumber: 802,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -4401,40 +4403,40 @@ function DataMethodsView({ benchmark, experiment }) {
                                         children: "EARTH ↔ MARS"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 808,
+                                        lineNumber: 809,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                         children: "73.14"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 809,
+                                        lineNumber: 810,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "TMSI ≈ 73.14 · 95% CI 64.99 – 78.55 · Conditionally ready (Earth DEM ~29.3 m effective; NAVD88 vs delta geoid/MOLA; single US region)"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 810,
+                                        lineNumber: 811,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
                                         children: "Death Valley / southern Arizona region vs Jezero crater. Not generalizable to global Earth or global Mars; vertical datum difference is unquantified."
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 811,
+                                        lineNumber: 812,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 807,
+                                lineNumber: 808,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 794,
+                        lineNumber: 795,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4442,13 +4444,13 @@ function DataMethodsView({ benchmark, experiment }) {
                         children: "All three comparisons share the documented TMSI limitation: within-body similarity ranges overlap between-body ranges. TMSI measures terrain morphology-distribution similarity only — not geological equivalence, not habitability, not landing safety, not planetary identity."
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 814,
+                        lineNumber: 815,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 792,
+                lineNumber: 793,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4459,7 +4461,7 @@ function DataMethodsView({ benchmark, experiment }) {
                         children: "EXPORT RESEARCH PACKAGE"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 818,
+                        lineNumber: 819,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4473,7 +4475,7 @@ function DataMethodsView({ benchmark, experiment }) {
                                 children: "EXPORT JSON"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 820,
+                                lineNumber: 821,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4484,7 +4486,7 @@ function DataMethodsView({ benchmark, experiment }) {
                                 children: "EXPORT CSV"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 821,
+                                lineNumber: 822,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4495,25 +4497,25 @@ function DataMethodsView({ benchmark, experiment }) {
                                 children: "EXPORT PDF"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 822,
+                                lineNumber: 823,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 819,
+                        lineNumber: 820,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 817,
+                lineNumber: 818,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-        lineNumber: 736,
+        lineNumber: 737,
         columnNumber: 5
     }, this);
 }
@@ -4647,25 +4649,25 @@ function ResearchWorkbench() {
                                     children: "TERRA TWIN"
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                    lineNumber: 925,
+                                    lineNumber: 926,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
                                     children: "PLANETARY TERRAIN MORPHOLOGY LAB"
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                    lineNumber: 926,
+                                    lineNumber: 927,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                            lineNumber: 924,
+                            lineNumber: 925,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 923,
+                        lineNumber: 924,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4675,20 +4677,20 @@ function ResearchWorkbench() {
                                 className: "live-dot"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 930,
+                                lineNumber: 931,
                                 columnNumber: 11
                             }, this),
                             backendOnline === false ? "BACKEND OFFLINE" : backendOnline === null ? "BACKEND CHECKING" : "BACKEND ONLINE"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 929,
+                        lineNumber: 930,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 922,
+                lineNumber: 923,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -4701,7 +4703,7 @@ function ResearchWorkbench() {
                         children: "EXPLORE"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 934,
+                        lineNumber: 935,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4710,7 +4712,7 @@ function ResearchWorkbench() {
                         children: "COMPARE"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 935,
+                        lineNumber: 936,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4719,7 +4721,7 @@ function ResearchWorkbench() {
                         children: "RELIABILITY"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 936,
+                        lineNumber: 937,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4728,7 +4730,7 @@ function ResearchWorkbench() {
                         children: "DATA & METHODS"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 937,
+                        lineNumber: 938,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4737,13 +4739,13 @@ function ResearchWorkbench() {
                         children: "MAP"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 938,
+                        lineNumber: 939,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 933,
+                lineNumber: 934,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -4756,13 +4758,13 @@ function ResearchWorkbench() {
                                 className: "pulse-line"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 942,
+                                lineNumber: 943,
                                 columnNumber: 76
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 942,
+                        lineNumber: 943,
                         columnNumber: 25
                     }, this),
                     view === "explore" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ExploreView, {
@@ -4774,7 +4776,7 @@ function ResearchWorkbench() {
                         onExploreContextClear: ()=>setExploreContextId(null)
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 943,
+                        lineNumber: 944,
                         columnNumber: 32
                     }, this),
                     view === "compare" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CompareView, {
@@ -4785,7 +4787,7 @@ function ResearchWorkbench() {
                         onClearCompareCandidate: ()=>setCompareCandidateId(null)
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 944,
+                        lineNumber: 945,
                         columnNumber: 32
                     }, this),
                     view === "reliability" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ReliabilityView, {
@@ -4793,7 +4795,7 @@ function ResearchWorkbench() {
                         experiment: experiment
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 945,
+                        lineNumber: 946,
                         columnNumber: 36
                     }, this),
                     view === "data_methods" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DataMethodsView, {
@@ -4801,7 +4803,7 @@ function ResearchWorkbench() {
                         experiment: experiment
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 946,
+                        lineNumber: 947,
                         columnNumber: 37
                     }, this),
                     view === "map" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DiscoveryMap, {
@@ -4827,13 +4829,13 @@ function ResearchWorkbench() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 948,
+                        lineNumber: 949,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 941,
+                lineNumber: 942,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
@@ -4843,26 +4845,26 @@ function ResearchWorkbench() {
                         children: "TERRA TWIN — EARTH-TO-PLANETARY ANALOG DISCOVERY"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 970,
+                        lineNumber: 971,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         children: "MORPHOLOGY ONLY — NOT A HABITABILITY OR LANDING CERTIFICATION"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 971,
+                        lineNumber: 972,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 969,
+                lineNumber: 970,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-        lineNumber: 921,
+        lineNumber: 922,
         columnNumber: 5
     }, this);
 }
@@ -5208,7 +5210,7 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                 children: "Environment"
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 1268,
+                lineNumber: 1269,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5222,18 +5224,18 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                         children: env.replace(/_/g, " ")
                     }, env, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 1271,
+                        lineNumber: 1272,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 1269,
+                lineNumber: 1270,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-        lineNumber: 1267,
+        lineNumber: 1268,
         columnNumber: 5
     }, this);
     const renderPlanetFilters = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5244,7 +5246,7 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                 children: "Planetary Target"
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 1281,
+                lineNumber: 1282,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5258,18 +5260,18 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                         children: planet
                     }, planet, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 1284,
+                        lineNumber: 1285,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 1282,
+                lineNumber: 1283,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-        lineNumber: 1280,
+        lineNumber: 1281,
         columnNumber: 5
     }, this);
     const renderStatusFilters = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5280,7 +5282,7 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                 children: "Validation Status"
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 1294,
+                lineNumber: 1295,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5297,18 +5299,18 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                         children: status.replace(/_/g, " ")
                     }, status, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 1297,
+                        lineNumber: 1298,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 1295,
+                lineNumber: 1296,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-        lineNumber: 1293,
+        lineNumber: 1294,
         columnNumber: 5
     }, this);
     const renderBasemap = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5319,7 +5321,7 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                 children: "Basemap"
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 1307,
+                lineNumber: 1308,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5333,18 +5335,18 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                         children: meta.name
                     }, id, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 1310,
+                        lineNumber: 1311,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 1308,
+                lineNumber: 1309,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-        lineNumber: 1306,
+        lineNumber: 1307,
         columnNumber: 5
     }, this);
     const renderSearchControl = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5355,7 +5357,7 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                 children: "Search"
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 1318,
+                lineNumber: 1319,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -5367,13 +5369,13 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                 "aria-label": "Search candidates"
             }, void 0, false, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 1319,
+                lineNumber: 1320,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-        lineNumber: 1317,
+        lineNumber: 1318,
         columnNumber: 5
     }, this);
     const renderFilterRow = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5388,7 +5390,7 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-        lineNumber: 1331,
+        lineNumber: 1332,
         columnNumber: 5
     }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -5404,20 +5406,20 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                                 children: "MAP"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 1344,
+                                lineNumber: 1345,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 children: "Earth Candidate Explorer"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 1345,
+                                lineNumber: 1346,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 1343,
+                        lineNumber: 1344,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5430,13 +5432,13 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 1347,
+                        lineNumber: 1348,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 1342,
+                lineNumber: 1343,
                 columnNumber: 7
             }, this),
             !isSplit && renderFilterRow,
@@ -5454,20 +5456,20 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                                         children: "NO MATCHES"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 1356,
+                                        lineNumber: 1357,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "No candidates match the current filters. Clear the search or remove filters."
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 1357,
+                                        lineNumber: 1358,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 1355,
+                                lineNumber: 1356,
                                 columnNumber: 13
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 ref: mapContainerRef,
@@ -5476,7 +5478,7 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                                 "aria-label": "Interactive map of Earth candidate locations"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 1360,
+                                lineNumber: 1361,
                                 columnNumber: 13
                             }, this),
                             validCandidates.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5484,13 +5486,13 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                                 children: "Click a marker to open its research profile. Scroll to zoom · drag to pan."
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 1363,
+                                lineNumber: 1364,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 1353,
+                        lineNumber: 1354,
                         columnNumber: 9
                     }, this),
                     !isSplit && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
@@ -5509,39 +5511,15 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                                                 children: "CANDIDATE"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 1371,
+                                                lineNumber: 1372,
                                                 columnNumber: 44
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 children: "Unvalidated candidate"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 1371,
+                                                lineNumber: 1372,
                                                 columnNumber: 101
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 1371,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "legend-item",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "status-badge SOURCE_VERIFIED",
-                                                children: "SOURCE_VERIFIED"
-                                            }, void 0, false, {
-                                                fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 1372,
-                                                columnNumber: 44
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                children: "Source information verified"
-                                            }, void 0, false, {
-                                                fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 1372,
-                                                columnNumber: 113
                                             }, this)
                                         ]
                                     }, void 0, true, {
@@ -5553,19 +5531,19 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                                         className: "legend-item",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "status-badge DATA_AVAILABLE",
-                                                children: "DATA_AVAILABLE"
+                                                className: "status-badge SOURCE_VERIFIED",
+                                                children: "SOURCE_VERIFIED"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                                 lineNumber: 1373,
                                                 columnNumber: 44
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                children: "DEM elevation data available"
+                                                children: "Source information verified"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                                 lineNumber: 1373,
-                                                columnNumber: 111
+                                                columnNumber: 113
                                             }, this)
                                         ]
                                     }, void 0, true, {
@@ -5577,30 +5555,54 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                                         className: "legend-item",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "status-badge READY_FOR_COMPARISON",
-                                                children: "READY"
+                                                className: "status-badge DATA_AVAILABLE",
+                                                children: "DATA_AVAILABLE"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                                 lineNumber: 1374,
                                                 columnNumber: 44
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                children: "Ready for Phase 20 comparison"
+                                                children: "DEM elevation data available"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                                 lineNumber: 1374,
-                                                columnNumber: 108
+                                                columnNumber: 111
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
                                         lineNumber: 1374,
                                         columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "legend-item",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "status-badge READY_FOR_COMPARISON",
+                                                children: "READY"
+                                            }, void 0, false, {
+                                                fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
+                                                lineNumber: 1375,
+                                                columnNumber: 44
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                children: "Ready for Phase 20 comparison"
+                                            }, void 0, false, {
+                                                fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
+                                                lineNumber: 1375,
+                                                columnNumber: 108
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
+                                        lineNumber: 1375,
+                                        columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 1370,
+                                lineNumber: 1371,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -5611,13 +5613,13 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                                 children: "OPEN FIRST CANDIDATE"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 1376,
+                                lineNumber: 1377,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 1368,
+                        lineNumber: 1369,
                         columnNumber: 11
                     }, this),
                     isSplit && selectedCandidate && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$CandidateProfile$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -5629,13 +5631,13 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                         verifiedTerrain: selectedCandidate.id === "death_valley"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 1383,
+                        lineNumber: 1384,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 1352,
+                lineNumber: 1353,
                 columnNumber: 7
             }, this),
             isSplit && renderFilterRow,
@@ -5648,7 +5650,7 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                                 children: "Accessible list alternative:"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 1398,
+                                lineNumber: 1399,
                                 columnNumber: 11
                             }, this),
                             " Table of registered Earth candidates with coordinates, environment classification, planetary relevance and validation status. Click ",
@@ -5656,14 +5658,14 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                                 children: "Enter"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                lineNumber: 1398,
+                                lineNumber: 1399,
                                 columnNumber: 189
                             }, this),
                             " on any row to open its research profile."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 1397,
+                        lineNumber: 1398,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5681,60 +5683,60 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                                                 children: "Candidate"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 1403,
+                                                lineNumber: 1404,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 children: "Country"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 1403,
+                                                lineNumber: 1404,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 children: "Lat"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 1403,
+                                                lineNumber: 1404,
                                                 columnNumber: 53
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 children: "Lon"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 1403,
+                                                lineNumber: 1404,
                                                 columnNumber: 65
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 children: "Environment"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 1403,
+                                                lineNumber: 1404,
                                                 columnNumber: 77
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 children: "Target"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 1403,
+                                                lineNumber: 1404,
                                                 columnNumber: 97
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 children: "Status"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                lineNumber: 1403,
+                                                lineNumber: 1404,
                                                 columnNumber: 112
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                        lineNumber: 1403,
+                                        lineNumber: 1404,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                    lineNumber: 1402,
+                                    lineNumber: 1403,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -5752,42 +5754,42 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                                                     children: c.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 1408,
+                                                    lineNumber: 1409,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     children: c.country
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 1409,
+                                                    lineNumber: 1410,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     children: c.latitude.toFixed(2)
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 1410,
+                                                    lineNumber: 1411,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     children: c.longitude.toFixed(2)
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 1411,
+                                                    lineNumber: 1412,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     children: c.environment_classification.replace(/_/g, " ")
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 1412,
+                                                    lineNumber: 1413,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     children: c.planetary_relevance
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 1413,
+                                                    lineNumber: 1414,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -5796,46 +5798,46 @@ function DiscoveryMap({ candidates, selectedCandidateId, zoomRequest, onCandidat
                                                         children: c.status
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                        lineNumber: 1414,
+                                                        lineNumber: 1415,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                                    lineNumber: 1414,
+                                                    lineNumber: 1415,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, c.id, true, {
                                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                            lineNumber: 1407,
+                                            lineNumber: 1408,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                                    lineNumber: 1405,
+                                    lineNumber: 1406,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                            lineNumber: 1401,
+                            lineNumber: 1402,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                        lineNumber: 1400,
+                        lineNumber: 1401,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-                lineNumber: 1396,
+                lineNumber: 1397,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/ResearchWorkbench.tsx",
-        lineNumber: 1341,
+        lineNumber: 1342,
         columnNumber: 5
     }, this);
 }
@@ -5878,9 +5880,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/node_modules/three/build/three.core.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$three$2f$build$2f$three$2e$module$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/frontend/node_modules/three/build/three.module.js [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/lib/api.ts [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 const RAMPS = {
@@ -6028,7 +6032,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                 "TerrainViewer.useEffect": async ()=>{
                     // All setState calls happen after an await boundary; no synchronous cascading render
                     try {
-                        const url = gridUrl ? gridUrl(layer) : `http://localhost:8000/api/similarity/terrain-grid/${encodeURIComponent(datasetId)}?layer=${encodeURIComponent(layer)}&max_dim=192`;
+                        const url = gridUrl ? gridUrl(layer) : `${__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["apiUrl"]}/api/similarity/terrain-grid/${encodeURIComponent(datasetId)}?layer=${encodeURIComponent(layer)}&max_dim=192`;
                         const res = await fetch(url, {
                             cache: "no-store"
                         });
@@ -6333,12 +6337,12 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                             children: datasetId === "moon_lola" ? "MOON LOLA — VALIDATED" : datasetId === "mars_jezero_ctx_dtm" ? "MARS JEZERO CTX DTM — VALIDATED" : "DEATH VALLEY — USGS 3DEP"
                         }, void 0, false, {
                             fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                            lineNumber: 364,
+                            lineNumber: 365,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                        lineNumber: 363,
+                        lineNumber: 364,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6361,7 +6365,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                         children: "2D MAP"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                        lineNumber: 368,
+                                        lineNumber: 369,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6371,13 +6375,13 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                         children: "3D TERRAIN"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                        lineNumber: 369,
+                                        lineNumber: 370,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                lineNumber: 367,
+                                lineNumber: 368,
                                 columnNumber: 11
                             }, this),
                             mode === "2d" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6393,7 +6397,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                         children: "−"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                        lineNumber: 373,
+                                        lineNumber: 374,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6403,7 +6407,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                        lineNumber: 374,
+                                        lineNumber: 375,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6416,7 +6420,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                         children: "+"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                        lineNumber: 375,
+                                        lineNumber: 376,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6429,7 +6433,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                         children: "RESET"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                        lineNumber: 376,
+                                        lineNumber: 377,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6438,13 +6442,13 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                         children: fullscreen ? "EXIT FULLSCREEN" : "FULLSCREEN"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                        lineNumber: 377,
+                                        lineNumber: 378,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                lineNumber: 372,
+                                lineNumber: 373,
                                 columnNumber: 13
                             }, this),
                             mode === "3d" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6456,7 +6460,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                         children: "VERTICAL EXAGGERATION"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                        lineNumber: 382,
+                                        lineNumber: 383,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -6469,7 +6473,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                         "aria-label": "Vertical exaggeration"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                        lineNumber: 383,
+                                        lineNumber: 384,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6479,7 +6483,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                        lineNumber: 384,
+                                        lineNumber: 385,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6488,25 +6492,25 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                         children: fullscreen ? "EXIT FULLSCREEN" : "FULLSCREEN"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                        lineNumber: 385,
+                                        lineNumber: 386,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                lineNumber: 381,
+                                lineNumber: 382,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                        lineNumber: 366,
+                        lineNumber: 367,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                lineNumber: 362,
+                lineNumber: 363,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6522,12 +6526,12 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                         children: l.label
                     }, l.id, false, {
                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                        lineNumber: 393,
+                        lineNumber: 394,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                lineNumber: 391,
+                lineNumber: 392,
                 columnNumber: 7
             }, this),
             error ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6539,23 +6543,23 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                         children: "LAYER UNAVAILABLE"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                        lineNumber: 401,
+                        lineNumber: 402,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         children: [
                             error,
-                            ". Verify the backend is reachable at http://localhost:8000 and the raster dataset loads (see DATA & METHODS)."
+                            ". Verify the backend is reachable at /api and the raster dataset loads (see DATA & METHODS)."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                        lineNumber: 402,
+                        lineNumber: 403,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                lineNumber: 400,
+                lineNumber: 401,
                 columnNumber: 9
             }, this) : null,
             loading && !grid ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6566,13 +6570,13 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                         className: "pulse-line"
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                        lineNumber: 406,
+                        lineNumber: 407,
                         columnNumber: 78
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                lineNumber: 406,
+                lineNumber: 407,
                 columnNumber: 27
             }, this) : null,
             mode === "2d" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6591,7 +6595,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                         onPointerLeave: handlePointerUp
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                        lineNumber: 410,
+                        lineNumber: 411,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6605,7 +6609,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                lineNumber: 423,
+                                lineNumber: 424,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6617,13 +6621,13 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                lineNumber: 424,
+                                lineNumber: 425,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                        lineNumber: 422,
+                        lineNumber: 423,
                         columnNumber: 11
                     }, this),
                     showLegend && grid ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6638,7 +6642,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                lineNumber: 428,
+                                lineNumber: 429,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6653,7 +6657,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                lineNumber: 429,
+                                lineNumber: 430,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6663,39 +6667,39 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                         children: rangeMin.toFixed(1)
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                        lineNumber: 431,
+                                        lineNumber: 432,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         children: ((rangeMin + rangeMax) / 2).toFixed(1)
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                        lineNumber: 432,
+                                        lineNumber: 433,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         children: rangeMax.toFixed(1)
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                        lineNumber: 433,
+                                        lineNumber: 434,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                lineNumber: 430,
+                                lineNumber: 431,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                        lineNumber: 427,
+                        lineNumber: 428,
                         columnNumber: 13
                     }, this) : null
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                lineNumber: 409,
+                lineNumber: 410,
                 columnNumber: 9
             }, this),
             mode === "3d" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6704,7 +6708,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                 "aria-label": "3D terrain surface"
             }, void 0, false, {
                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                lineNumber: 441,
+                lineNumber: 442,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6720,7 +6724,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                 children: "RAMP"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                lineNumber: 446,
+                                lineNumber: 447,
                                 columnNumber: 11
                             }, this),
                             Object.keys(RAMP_LABELS).map((key)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6730,13 +6734,13 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                     children: RAMP_LABELS[key]
                                 }, key, false, {
                                     fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                    lineNumber: 448,
+                                    lineNumber: 449,
                                     columnNumber: 13
                                 }, this))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                        lineNumber: 445,
+                        lineNumber: 446,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6749,7 +6753,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                 children: "DISPLAY"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                lineNumber: 452,
+                                lineNumber: 453,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6757,7 +6761,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                 children: rangeMin.toFixed(1)
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                lineNumber: 453,
+                                lineNumber: 454,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -6770,7 +6774,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                 "aria-label": "Minimum display value"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                lineNumber: 454,
+                                lineNumber: 455,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -6783,7 +6787,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                 "aria-label": "Maximum display value"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                lineNumber: 455,
+                                lineNumber: 456,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6791,7 +6795,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                 children: rangeMax.toFixed(1)
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                lineNumber: 456,
+                                lineNumber: 457,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6806,7 +6810,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                 children: "RESET RANGE"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                lineNumber: 457,
+                                lineNumber: 458,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6816,19 +6820,19 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                                 children: showLegend ? "HIDE LEGEND" : "SHOW LEGEND"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                                lineNumber: 458,
+                                lineNumber: 459,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                        lineNumber: 451,
+                        lineNumber: 452,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                lineNumber: 444,
+                lineNumber: 445,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6839,7 +6843,7 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                             children: "RESOLUTION"
                         }, void 0, false, {
                             fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                            lineNumber: 464,
+                            lineNumber: 465,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
@@ -6850,52 +6854,52 @@ function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl }) {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                            lineNumber: 465,
+                            lineNumber: 466,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dt", {
                             children: "COVERAGE"
                         }, void 0, false, {
                             fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                            lineNumber: 466,
+                            lineNumber: 467,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
                             children: grid ? `${grid.downsampled_dimensions[0]}×${grid.downsampled_dimensions[1]} display samples; elevation ${(grid.elevation_stats.min ?? 0).toFixed(0)} – ${(grid.elevation_stats.max ?? 0).toFixed(0)} m` : "loading…"
                         }, void 0, false, {
                             fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                            lineNumber: 467,
+                            lineNumber: 468,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dt", {
                             children: "SOURCE"
                         }, void 0, false, {
                             fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                            lineNumber: 468,
+                            lineNumber: 469,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
                             children: datasetId === "moon_lola" ? "LOLA south-polar window (LDEM_80S_20MPP_ADJ), windowed; nominal 20 m/pixel" : datasetId === "usgs_3dep_death_valley" ? "USGS 3DEP 1-arc-second tile n37w117 → EPSG:26911 at 20 m grid; native ~29.3 m; vertical datum NAVD88" : "Jezero CTX DTM (JEZ_ctx_B_soc_008_DTM_MOLAtopography_DeltaGeoid_20m_Eqc_latTs0_lon0), 20 m/pixel"
                         }, void 0, false, {
                             fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                            lineNumber: 469,
+                            lineNumber: 470,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                    lineNumber: 463,
+                    lineNumber: 464,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/frontend/components/TerrainViewer.tsx",
-                lineNumber: 462,
+                lineNumber: 463,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/components/TerrainViewer.tsx",
-        lineNumber: 361,
+        lineNumber: 362,
         columnNumber: 5
     }, this);
 }
@@ -6911,6 +6915,8 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "use strict";
 
 __turbopack_context__.s([
+    "apiUrl",
+    ()=>apiUrl,
     "checkBackendHealth",
     ()=>checkBackendHealth,
     "downloadExport",
@@ -6931,7 +6937,10 @@ __turbopack_context__.s([
     ()=>rasterUrl
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/frontend/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-const apiUrl = __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+// Default: same-origin relative /api (Vercel Services: top-level rewrite -> FastAPI).
+// Local dev: fall back to http://localhost:8000 when NEXT_PUBLIC_API_URL is unset.
+const devFallback = ("TURBOPACK compile-time truthy", 1) ? "http://localhost:8000" : "TURBOPACK unreachable";
+const apiUrl = __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_API_URL ?? devFallback;
 async function fetchCandidates() {
     const response = await fetch(`${apiUrl}/api/candidates`, {
         cache: "no-store"

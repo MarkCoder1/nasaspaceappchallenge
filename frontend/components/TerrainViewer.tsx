@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
+import { apiUrl } from "@/lib/api";
 
 export type TerrainLayer = "elevation" | "hillshade" | "slope" | "local_relief" | "terrain_ruggedness";
 
@@ -128,7 +129,7 @@ export default function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl
     (async () => {
       // All setState calls happen after an await boundary; no synchronous cascading render
       try {
-        const url = gridUrl ? gridUrl(layer) : `http://localhost:8000/api/similarity/terrain-grid/${encodeURIComponent(datasetId)}?layer=${encodeURIComponent(layer)}&max_dim=192`;
+        const url = gridUrl ? gridUrl(layer) : `${apiUrl}/api/similarity/terrain-grid/${encodeURIComponent(datasetId)}?layer=${encodeURIComponent(layer)}&max_dim=192`;
         const res = await fetch(url, { cache: "no-store" });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const payload = (await res.json()) as TerrainGridData;
@@ -399,7 +400,7 @@ export default function TerrainViewer({ datasetId, layer, onLayerChange, gridUrl
       {error ? (
         <div className="grid-unavailable" role="alert">
           <span className="method-tag">LAYER UNAVAILABLE</span>
-          <p>{error}. Verify the backend is reachable at http://localhost:8000 and the raster dataset loads (see DATA &amp; METHODS).</p>
+          <p>{error}. Verify the backend is reachable at /api and the raster dataset loads (see DATA &amp; METHODS).</p>
         </div>
       ) : null}
 

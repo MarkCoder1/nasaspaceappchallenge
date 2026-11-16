@@ -11,7 +11,7 @@ from science.similarity.features.feature_extraction import extract_terrain_featu
 from science.similarity.scoring.similarity import compare_terrain
 
 
-REPOSITORY_ROOT = Path(__file__).resolve().parents[3]
+REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
 DATASET_REGISTRY: dict[str, dict[str, Any]] = {
     "mars_jezero_ctx_dtm": {
         "id": "mars_jezero_ctx_dtm",

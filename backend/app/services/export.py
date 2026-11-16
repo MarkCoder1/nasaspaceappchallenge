@@ -38,7 +38,7 @@ def _repository_root() -> Any:
 
     global REPOSITORY_ROOT
     if REPOSITORY_ROOT is None:
-        REPOSITORY_ROOT = Path(__file__).resolve().parents[3]
+        REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
     return REPOSITORY_ROOT
 
 

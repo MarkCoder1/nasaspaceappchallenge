@@ -275,6 +275,10 @@
     position: fixed;
   }
 
+  .relative {
+    position: relative;
+  }
+
   .container {
     width: 100%;
   }

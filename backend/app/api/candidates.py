@@ -5,7 +5,7 @@ from fastapi import APIRouter, HTTPException
 
 router = APIRouter(prefix="/api/candidates", tags=["candidates"])
 
-REGISTRY_PATH = Path(__file__).resolve().parents[3] / "science" / "datasets" / "registry.json"
+REGISTRY_PATH = Path(__file__).resolve().parents[2] / "science" / "datasets" / "registry.json"
 
 
 def _load_registry() -> dict:
@@ -48,7 +48,7 @@ import numpy as np
 # Reprojected to EPSG:26911 (UTM Zone 11N) at 20.0 m post spacing.
 candidate_terrain_sources = {
     "death_valley": {
-        "path": Path(__file__).resolve().parents[3] / "data" / "processed" / "USGS_1_n37w117_20m_utm11n.tif",
+        "path": Path(__file__).resolve().parents[2] / "data" / "processed" / "USGS_1_n37w117_20m_utm11n.tif",
         "label": "USGS 3DEP 1-arc-second (processed to 20 m)",
         "provider": "U.S. Geological Survey, 3D Elevation Program",
         "native_resolution_m": 29.3,

@@ -1,4 +1,7 @@
-const apiUrl = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+// Default: same-origin relative /api (Vercel Services: top-level rewrite -> FastAPI).
+// Local dev: fall back to http://localhost:8000 when NEXT_PUBLIC_API_URL is unset.
+const devFallback = process.env.NODE_ENV === "development" ? "http://localhost:8000" : "";
+export const apiUrl = process.env.NEXT_PUBLIC_API_URL ?? devFallback;
 
 export type CandidateEntry = {
   id: string;

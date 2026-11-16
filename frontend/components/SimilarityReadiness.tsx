@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { apiUrl } from "@/lib/api";
 
 type SimilarityStatus = {
   engine: string;
@@ -10,7 +11,7 @@ type SimilarityStatus = {
   unavailable_datasets: Array<{ id: string; body: string; reason: string }>;
 };
 
-const apiUrl = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+
 
 export default function SimilarityReadiness() {
   const [status, setStatus] = useState<SimilarityStatus | null>(null);

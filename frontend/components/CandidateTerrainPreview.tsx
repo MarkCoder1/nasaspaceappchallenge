@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { apiUrl } from "@/lib/api";
 
 interface CandidateTerrainPreviewProps {
   candidateId: string;
@@ -50,7 +51,7 @@ export default function CandidateTerrainPreview({ candidateId, layer = "elevatio
       return undefined;
     }
     let cancelled = false;
-    fetch(`http://localhost:8000/api/candidates/terrain-grid/${encodeURIComponent(candidateId)}?layer=${encodeURIComponent(layer)}&max_dim=144`, { cache: "no-store" })
+    fetch(`${apiUrl}/api/candidates/terrain-grid/${encodeURIComponent(candidateId)}?layer=${encodeURIComponent(layer)}&max_dim=144`, { cache: "no-store" })
       .then(async (res) => {
         if (!res.ok) {
           if (!cancelled) setState("unavailable");

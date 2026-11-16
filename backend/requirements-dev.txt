@@ -1,0 +1,4 @@
+# Dev/test-only dependencies. NOT installed in the Vercel function bundle.
+-r requirements.txt
+pytest>=8.3,<9.0
+httpx>=0.28,<1.0

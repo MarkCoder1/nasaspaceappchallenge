@@ -6,6 +6,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import {
+  apiUrl,
   checkBackendHealth,
   downloadExport,
   fetchCandidates,
@@ -436,7 +437,7 @@ function ExploreView({ layer, setLayer, terrainDataset, setTerrainDataset, explo
       )}
       <div className="workspace-grid">
         <div className="workspace-main">
-          <TerrainViewer datasetId={terrainDataset} layer={layer} onLayerChange={setLayer} gridUrl={terrainDataset === "usgs_3dep_death_valley" ? (l) => `http://localhost:8000/api/candidates/terrain-grid/death_valley?layer=${encodeURIComponent(l)}&max_dim=192` : undefined} />
+          <TerrainViewer datasetId={terrainDataset} layer={layer} onLayerChange={setLayer} gridUrl={terrainDataset === "usgs_3dep_death_valley" ? (l) => `${apiUrl}/api/candidates/terrain-grid/death_valley?layer=${encodeURIComponent(l)}&max_dim=192` : undefined} />
         </div>
         <div className="side-column">
           <div className="side-card">
@@ -505,7 +506,7 @@ function CompareView({ selectedFeature, setSelectedFeature, experiment, compareC
           <span className="eyebrow">EXPERIMENT DATA UNAVAILABLE</span>
           <h3>Stored moon–mars experiment results not loaded</h3>
           <p>The frontend is not receiving the stored moon–mars experiment from the backend (<code>GET /api/similarity/results</code>) or the backend is not running. The comparison workspace requires the authenticated experiment artifact to display feature statistics.</p>
-          <p>Start the backend (<code>uvicorn app.main:app --reload</code> inside <code>backend/</code>) or verify <code>http://localhost:8000/api/similarity/results</code> returns HTTP 200.</p>
+          <p>Start the backend (<code>uvicorn app.main:app --reload</code> inside <code>backend/</code>) or verify <code>/api/similarity/results</code> returns HTTP 200.</p>
         </div>
       ) : (
         <>
